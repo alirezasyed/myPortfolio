@@ -22,3 +22,39 @@ body {
 p {
     font-size: 14px;
 }
+
+
+/* ================ Header ===================*/
+
+.header {
+    border: 1px solid #fff;
+    height: 100vh;
+}
+
+header .menu_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu_list ul li a {
+    background: transparent;
+    border-color: #129cf3;
+    padding: 10px 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.header .photo {
+    width: 100%;
+}
+
+.header .photo a {
+    display: flex;
+    justify-content: flex-end;
+}
