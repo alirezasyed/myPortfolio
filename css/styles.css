@@ -108,7 +108,7 @@ header .menu_list ul li a {
 }
 
 .btn-projet:hover {
-    background-color: #129CF3;
+    background-color: #6464b9;
     color: #fff;
 }
 
@@ -142,4 +142,17 @@ header .menu_list ul li a {
 .header-img img {
     border: 1px solid #fff;
     width: 100%;
+}
+
+
+/* ================ About ===================*/
+
+#about {
+    height: 100%;
+}
+
+#about .about-image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
 }
