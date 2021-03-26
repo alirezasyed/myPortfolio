@@ -1,8 +1,8 @@
 /* ================ Main ===================*/
 
-*,
-*::before,
-*::after {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@ body {
     background-position: 50% 50%;
     background-size: cover;
     height: 100vh;
-    color: $white;
+    color: #fff;
 }
 
 p {
@@ -26,23 +26,10 @@ p {
 
 /* ================ Header ===================*/
 
-.header {
-    border: 1px solid #fff;
-    height: 100vh;
-}
-
-header .menu_list {
-    display: flex;
-    justify-content: space-between;
-}
+.header {}
 
 header .menu_list ul li a {
-    background: transparent;
-    border-color: $light-blue;
-    padding: 10px 30px;
-    font-size: 19px;
-    text-transform: uppercase;
-    border-radius: 3px;
+    border-color: none;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -50,33 +37,23 @@ header .menu_list ul li a {
     transition: all 1s;
 }
 
-.header .photo {
-    width: 100%;
-}
-
-.header .photo a {
-    display: flex;
-    justify-content: flex-end;
+header .menu_list ul li a:hover {
+    /* background-color: #ffc857; */
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 
 
 /* ================ Header overlay ===================*/
 
-.header-overlay {
-    border: 1px solid #fff;
-}
-
-.logo {
-    padding-bottom: 50px;
-}
-
 .header-text h1 {
-    color: #fff;
     font-size: 35px;
     font-weight: 300;
     line-height: 45px;
     padding-top: 30px;
-    text-transform: uppercase;
 }
 
 .header-text p {
@@ -95,7 +72,6 @@ header .menu_list ul li a {
 .btn-projet:active,
 .btn-projet:visited {
     background: transparent;
-    border-color: $light-blue;
     padding: 10px 30px;
     font-size: 19px;
     text-transform: uppercase;
@@ -112,35 +88,8 @@ header .menu_list ul li a {
     color: #fff;
 }
 
-.btn-tour,
-.btn-tour:focus,
-.btn-tour:active,
-.btn-tour:visited {
-    color: $light-grayish;
-    margin-left: 20px;
-    text-transform: uppercase;
-    font-size: 19px;
-    font-weight: 500;
-    background: transparent;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-
-.btn-tour:hover {
-    color: $white;
-}
-
-.btn-tour i {
-    font-size: 20px;
-    padding-left: 5px;
-    color: $white;
-}
-
 .header-img img {
-    border: 1px solid $white;
+    border: 1px solid #fff;
     width: 100%;
 }
 
@@ -175,7 +124,7 @@ header .menu_list ul li a {
     border: 1px solid gray;
     border-radius: 3px;
     margin-bottom: 15px;
-    opacity: .8;
+    opacity: 0.8;
     outline: 0px !important;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;

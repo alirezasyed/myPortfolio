@@ -17,9 +17,11 @@
 
 
     <!-- Css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href="css/hamburgers.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
 
 
 </head>
@@ -27,9 +29,9 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header mb-5">
 
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="row">
 
@@ -37,18 +39,6 @@
                 <div class="col-md-6">
 
                     <div id="conteneur_menu">
-
-                        <div id="coordonnees_entete" class="d-flex flex-row">
-
-                            <div class="p-4 ml-4">
-                                <a href=""><i class="fab fa-github"></i></a>
-                            </div>
-
-                            <div class="p-4 ml-4">
-                                <a href=""><i class="fab fa-linkedin"></i></a>
-                            </div>
-
-                        </div>
 
                         <div>
 
@@ -69,26 +59,26 @@
 
                     <div class="col-md-6">
 
-                        <nav id="menu" class="navbar navbar-expand-lg noprint">
+                        <nav id="menu" class="navbar navbar-expand-lg">
 
                             <div class="collapse navbar-collapse" id="navContent">
 
-                                <ul class="navbar-nav ml-auto menu">
+                                <ul class="navbar-nav ml-auto text-uppercase">
 
                                     <li>
-                                        <a href="" class="">Home</a>
+                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Home</a>
                                     </li>
                                     <li>
-                                        <a href="" class="">About</a>
+                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">About</a>
                                     </li>
                                     <li>
-                                        <a href="" class="">Technologies</a>
+                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Technologies</a>
                                     </li>
                                     <li>
-                                        <a href="" class="">Experience</a>
+                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Experience</a>
                                     </li>
                                     <li>
-                                        <a href="" class="">Contact</a>
+                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Contact</a>
                                     </li>
 
                                 </ul>
@@ -101,48 +91,32 @@
 
                 </div>
 
-
-                <div class="col-md-4">
-
-                    <div class="photo">
-                        <a href="" id="logo" title="Accueil">
-                            <img class="img-fluid" src="images/Logo.png" style="width: 13%;" alt="" />
-                        </a>
-                    </div>
-
-                </div>
-
             </div>
 
         </div>
 
         <!-- Header overlay -->
-        <div class="header-overlay">
+        <div class="header-overlay vh-100 d-flex flex-column align-items-center justify-content-center">
 
-            <div class="container">
+            <div class="row">
 
-                <div class="row">
+                <div class="col-md-6 offset-md-0 d-flex flex-row justify-content-center">
 
-                    <div class="col-md-12">
+                    <div class="p-4">
+                        <a href=""><i class="fab fa-github text-white"></i></a>
+                    </div>
 
-                        <div class="logo text-center">
-
-                            <img src="" alt="">
-
-                        </div>
-
+                    <div class="p-4">
+                        <a href=""><i class="fab fa-linkedin text-white"></i></a>
                     </div>
 
                 </div>
 
-            </div>
-
-            <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12 d-flex flex-column align-items-center">
 
                     <div class="header-text">
 
-                        <h1>&lt ALI SYED &gt</h1>
+                        <h1 class="text-white text-uppercase">&lt ALI SYED / &gt</h1>
                         <P>&lt Je suis un développeur web full stack / &gt</P>
                         <p>&lt Coding est ma passion &gt</p>
 
@@ -150,21 +124,9 @@
 
                     <div class="header-btns">
 
-                        <a class="btn btn-projet" href="">&lt Portfolio / &gt</a>
-                        <a class="btn btn-tour" href="">&lt Take a Tour / &gt
-                            <i class="far fa-angle-down"></i>
+                        <a class="btn btn-outline-light btn-projet text-white" href="">&lt Portfolio / &gt</a>
                         </a>
 
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3 col-md-offset-1">
-
-                    <div class="header-img">
-
-                        <img src="images/" alt="">
 
                     </div>
 
@@ -176,16 +138,17 @@
 
     <!-- About -->
     <section id="about">
+
         <div class="container">
 
             <div class="row">
 
                 <div class="col-md-6">
 
-                    <div class="section-title">
+                    <div class="section-title text-white text-capitalize">
 
-                        <h2>&lt About Me &gt</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, dolorem omnis consectetur incidunt fugiat, placeat natus voluptas, commodi debitis perspiciatis sunt nemo officiis deleniti illum ad sit asperiores. Quod, consequuntur?</p>
+                        <h2 class="text-white">&lt About Me &gt</h2>
+                        <p>Je suis un nouveau diplômé de l'Accèss Code School et un développeur web passionné. j'aime consacrer mon temps à la résolution de problèmes complexes et à la recherche de solutions,</p>
 
                     </div>
 
@@ -210,7 +173,7 @@
 
 
     <!-- Technology -->
-    <section class="vh-100">
+    <section class="vh-100 text-white">
 
         <div class="container">
 
@@ -218,7 +181,7 @@
 
                 <div class="col-md-11 col-md-offset-2 text-center">
 
-                    <div class="section-title">
+                    <div class="section-title text-white">
 
                         <h2>&lt Technologies et Skills / &gt</h2>
 
@@ -232,19 +195,9 @@
 
                 <div class="col-md-2">
 
-                    <div class="left-feature-item-icons">
+                    <div class="">
 
-                        <i class="fab fa-html5"></i>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-2">
-
-                    <div class="left-feature-item-icons">
-
-                        <i class="fab fa-css3-alt"></i>
+                        <i class="fa-5x fab fa-html5"></i>
 
                     </div>
 
@@ -252,18 +205,9 @@
 
                 <div class="col-md-2">
 
-                    <div class="left-feature-item-icons">
+                    <div class="">
 
-                        <i class="fab fa-bootstrap"></i>
-
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-
-                    <div class="left-feature-item-icons">
-
-                        <i class="fab fa-sass"></i>
+                        <i class="fa-5x fab fa-css3-alt"></i>
 
                     </div>
 
@@ -271,9 +215,18 @@
 
                 <div class="col-md-2">
 
-                    <div class="left-feature-item-icons">
+                    <div class="">
 
-                        <i class="fab fa-less"></i>
+                        <i class="fa-5x fab fa-bootstrap"></i>
+
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+
+                    <div class="">
+
+                        <i class="fa-5x fab fa-sass"></i>
 
                     </div>
 
@@ -281,9 +234,19 @@
 
                 <div class="col-md-2">
 
-                    <div class="left-feature-item-icons">
+                    <div class="">
 
-                        <i class="fab fa-aws"></i>
+                        <i class="fa-5x fab fa-less"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <div class="">
+
+                        <i class="fa-5x fab fa-aws"></i>
 
                     </div>
 
@@ -297,7 +260,7 @@
 
                     <div class="left-feature-item-icons">
 
-                        <i class="fab fa-php"></i>
+                        <i class="fa-5x fab fa-php"></i>
 
                     </div>
 
@@ -307,8 +270,7 @@
 
                     <div class="left-feature-item-icons">
 
-                        <i class="fab fa-js-square"></i>
-                        <!-- <img src="images/logo-mysql.png" alt=""> -->
+                        <img src="images/logo-mysql.png" alt="">
 
                     </div>
 
@@ -318,7 +280,7 @@
 
                     <div class="left-feature-item-icons">
 
-                        <i class="fab fa-wordpress"></i>
+                        <i class="fa-5x fab fa-wordpress"></i>
 
                     </div>
                 </div>
@@ -327,7 +289,7 @@
 
                     <div class="left-feature-item-icons">
 
-                        <i class="fab fa-symfony"></i>
+                        <i class="fa-5x fab fa-symfony"></i>
 
                     </div>
 
@@ -341,7 +303,7 @@
 
                     <div class="left-feature-item-icons">
 
-                        <i class="fab fa-js-square"></i>
+                        <i class="fa-5x fab fa-js-square"></i>
 
                     </div>
                 </div>
@@ -350,7 +312,7 @@
 
                     <div class="left-feature-item-icons">
 
-                        <i class="fab fa-react"></i>
+                        <i class="fa-5x fab fa-react"></i>
 
                     </div>
 
@@ -360,7 +322,7 @@
 
                     <div class="left-feature-item-icons">
 
-                        <i class="fa fa-mobile"></i>
+                        <i class="fa-5x fa fa-mobile"></i>
 
                     </div>
 
@@ -373,71 +335,120 @@
 
     </section>
 
-    <section id="projet">
+    <!-- Projets -->
+    <section id="projet" class="vh-100">
 
         <div class="container">
 
-            <div class="row">
+            <div class="row text-center">
 
-                <div class="col-md-12 text-center vh-100">
+                <div class="col-md-12">
 
-                    <h3>Mes projets</h3>
+                    <h3 class="text-uppercase display-6 text-white">Mes projets</h3>
+
+                </div>
+
+                <hr>
+
+            </div>
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="card">
+
+                            <img src="images/bakery.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card">
+
+                            <img src="images/bakery.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card">
+
+                            <img src="images/bakery.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
-
-            <div class="row">
-
-                <div class="col-md-3">
-
-                    <img src="" alt="">
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <img src="" alt="">
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <img src="" alt="">
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <img src="" alt="">
-
-                </div>
-
-            </div>
-
-        </div>
 
     </section>
 
+    <!-- Contact us  -->
     <div class="contact-us-form">
+
         <div class="container">
+
+            <div class="d-flex flex-row">
+
+                <div class="col-md-12">
+
+                    <h3>Contact me</h3>
+
+                </div>
+
+            </div>
+
             <form role="form">
+
                 <div class="row">
+
                     <div class="col-md-4">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <input type="text" class="form-check-input-border form-control" id="name" placeholder="Name">
                         <input type="text" class="form-control" id="name" placeholder="Name">
                         <input type="text" class="form-control" id="name" placeholder="Name">
                     </div>
 
                     <div class="col-md-8">
+
                         <textarea name="" id="message" cols="30" rows="25" class="form-control" col="10" placeholder="Message Text"></textarea>
 
                         <button type="button" class="btn btn-outline-secondary submit-btn form-submit">SEND</button>
 
                     </div>
+
                 </div>
+
             </form>
+
         </div>
+
     </div>
 
 
