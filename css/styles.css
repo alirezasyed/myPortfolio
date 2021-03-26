@@ -1,8 +1,8 @@
 /* ================ Main ===================*/
 
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@ body {
     background-position: 50% 50%;
     background-size: cover;
     height: 100vh;
-    color: #fff;
+    color: $white;
 }
 
 p {
@@ -38,7 +38,7 @@ header .menu_list {
 
 header .menu_list ul li a {
     background: transparent;
-    border-color: #129cf3;
+    border-color: $light-blue;
     padding: 10px 30px;
     font-size: 19px;
     text-transform: uppercase;
@@ -95,7 +95,7 @@ header .menu_list ul li a {
 .btn-projet:active,
 .btn-projet:visited {
     background: transparent;
-    border-color: #129cf3;
+    border-color: $light-blue;
     padding: 10px 30px;
     font-size: 19px;
     text-transform: uppercase;
@@ -116,7 +116,7 @@ header .menu_list ul li a {
 .btn-tour:focus,
 .btn-tour:active,
 .btn-tour:visited {
-    color: #A9ADB0;
+    color: $light-grayish;
     margin-left: 20px;
     text-transform: uppercase;
     font-size: 19px;
@@ -130,17 +130,17 @@ header .menu_list ul li a {
 }
 
 .btn-tour:hover {
-    color: #fff;
+    color: $white;
 }
 
 .btn-tour i {
     font-size: 20px;
     padding-left: 5px;
-    color: #fff;
+    color: $white;
 }
 
 .header-img img {
-    border: 1px solid #fff;
+    border: 1px solid $white;
     width: 100%;
 }
 
@@ -160,6 +160,56 @@ header .menu_list ul li a {
 
 /* ================ Technology ===================*/
 
-#technology {
-    height: 100%;
+
+/* ================ Contact Us ===================*/
+
+.contact-us-form .form-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    opacity: .8;
+    outline: 0px !important;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#message {
+    height: 117px;
+    resize: none;
+}
+
+.submit-btn,
+.submit-btn:active,
+.submit-btn:focus,
+.submit-btn:visited {
+    background-color: transparent;
+    border-radius: 1px solid gray;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+    outline: 0px !important;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.submit-btn:hover {
+    background: blueviolet;
+    color: #fff;
+    border-color: blueviolet;
 }
