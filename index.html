@@ -29,63 +29,77 @@
 <body>
 
     <!-- Header -->
-    <header class="header mb-5">
+    <header class="header">
 
         <div class="container">
 
             <div class="row">
 
-                <!-- Social Links et le Button de Burger -->
+                <!-- le Button de Burger -->
                 <div class="col-md-6">
 
                     <div id="conteneur_menu">
 
-                        <div>
+                        <!-- <div> -->
 
-                            <button class="hamburger hamburger--emphatic navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="hamburger hamburger--emphatic navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
                                 </span>
                             </button>
 
-                        </div>
+                        <!-- </div> -->
 
                     </div>
 
                 </div>
 
-                <!-- lower menu  -->
+                <!-- menu  -->
                 <div class="menu_list">
 
-                    <div class="col-md-6">
+                    <div class="d-flex flex-row">
 
-                        <nav id="menu" class="navbar navbar-expand-lg">
+                        <div class="col-md-6">
 
-                            <div class="collapse navbar-collapse" id="navContent">
+                            <nav id="menu" class="navbar navbar-expand-lg">
 
-                                <ul class="navbar-nav ml-auto text-uppercase">
+                                <div class="collapse navbar-collapse" id="navContent">
 
-                                    <li>
-                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Technologies</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Experience</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Contact</a>
-                                    </li>
+                                    <ul class="navbar-nav ml-auto text-uppercase">
 
-                                </ul>
+                                        <li>
+                                            <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Technologies</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Experience</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn btn-outline-secondary border-0 p-3 mb-2 text-white">Contact</a>
+                                        </li>
 
-                            </div>
+                                    </ul>
 
-                        </nav>
+                                </div>
+
+                            </nav>
+
+                        </div>
+
+                        <div class="col-md-6 loader">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
 
                     </div>
 
@@ -96,11 +110,12 @@
         </div>
 
         <!-- Header overlay -->
-        <div class="header-overlay vh-100 d-flex flex-column align-items-center justify-content-center">
+        <!-- d-flex flex-column align-items-center justify-content-center -->
+        <div class="header-overlay vh-100">
 
             <div class="row">
 
-                <div class="col-md-6 offset-md-0 d-flex flex-row justify-content-center">
+                <div class="col-md-12 offset-md-0 d-flex flex-row justify-content-start">
 
                     <div class="p-4">
                         <a href=""><i class="fab fa-github text-white"></i></a>
@@ -111,6 +126,10 @@
                     </div>
 
                 </div>
+
+            </div>
+
+            <div class="d-flex flex-row">
 
                 <div class="col-md-12 d-flex flex-column align-items-center">
 
@@ -133,6 +152,8 @@
                 </div>
 
             </div>
+
+        </div>
 
     </header>
 
