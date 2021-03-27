@@ -29,7 +29,8 @@ p {
 .header {}
 
 header .menu_list ul li a {
-    border-color: none;
+    /* border-color: 1px solid #fff; */
+    font-weight: bold;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
