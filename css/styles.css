@@ -1,9 +1,10 @@
-/* ================ Main ===================*/
+/* ================ Main =================== */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none !important;
 }
 
 body {
@@ -16,7 +17,6 @@ body {
     background-position: 50% 50%;
     background-size: cover;
     height: 100vh;
-    color: #fff;
 }
 
 p {
@@ -24,7 +24,103 @@ p {
 }
 
 
-/* ================ Scroll bar ===================*/
+/* ================ Menu =================== */
+
+.header {
+    position: relative;
+    z-index: 1000;
+}
+
+.header .menu_list ul li a {
+    font-weight: bold;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.header .menu_list ul li a:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.navbar {
+    background: transparent;
+    transition: 0.5s;
+}
+
+.scrolled {
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* ================ Jumborton =================== */
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    font-size: 2em;
+}
+
+.banner .social a i {
+    margin-left: 115px;
+}
+
+.header-text .l-than,
+.g-than {
+    color: rgb(104, 40, 150);
+}
+
+.header-text h1 {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 45px;
+    padding-top: 30px;
+}
+
+.header-text p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.btn-projet,
+.btn-projet:focus,
+.btn-projet:active,
+.btn-projet:visited {
+    padding: 10px 30px;
+    font-size: 19px;
+    border-radius: 3px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.header-img img {
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+
+/* ================ Scroll bar =================== */
 
 ::-webkit-scrollbar {
     width: 25px;
@@ -45,28 +141,7 @@ p {
 }
 
 
-/* ================ Menu ===================*/
-
-header .menu_list ul li a {
-    /* border-color: 1px solid #fff; */
-    font-weight: bold;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-
-header .menu_list ul li a:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-
-
-/* animated logo  */
+/* ================ Animated logo =================== */
 
 .menu_list .loader {
     position: relative;
@@ -123,78 +198,23 @@ header .menu_list ul li a:hover {
 }
 
 
-/* ================ Header overlay ===================*/
+/* ================ About =================== */
 
-.header-overlay .social a i {
-    margin-left: 145px;
-}
-
-.header-text .l-than,
-.g-than {
-    color: rgb(104, 40, 150);
-}
-
-.header-text h1 {
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 45px;
-    padding-top: 30px;
-}
-
-.header-text p {
-    color: #fff;
-    font-size: 17px;
-    line-height: 28px;
-}
-
-.btn-projet,
-.btn-projet:focus,
-.btn-projet:active,
-.btn-projet:visited {
-    background: transparent;
-    padding: 10px 30px;
-    font-size: 19px;
-    text-transform: uppercase;
-    border-radius: 3px;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-
-.btn-projet:hover {
-    background-color: #6464b9;
-    color: #fff;
-}
-
-.header-img img {
-    border: 1px solid #fff;
-    width: 100%;
-}
-
-.social {
-    font-size: 2em;
-}
-
-
-/* ================ About ===================*/
-
-#about {
+.about-me {
     height: 100%;
 }
 
-#about .about-image {
+.about-me .about-image {
     width: 100%;
     height: 100%;
     border: 1px solid #fff;
 }
 
 
-/* ================ Technology ===================*/
+/* ================ Technology =================== */
 
 
-/* ================ Contact Us ===================*/
+/* ================ Contact Us =================== */
 
 .contact-us-form .form-control {
     display: block;

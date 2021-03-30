@@ -29,7 +29,7 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <header id="home" class="header">
 
         <div class="container">
 
@@ -61,26 +61,26 @@
 
                         <div class="col-md-6">
 
-                            <nav id="menu" class="navbar navbar-expand-lg">
+                            <nav id="menu" class="navbar navbar-expand-lg navbar-light mt-2 fixed-top">
 
                                 <div class="collapse navbar-collapse" id="navContent">
 
                                     <ul class="navbar-nav ml-auto text-uppercase">
 
                                         <li>
-                                            <a href="" class="btn btn-outline-secondary border-white py-3 px-4 m-2 mb-5 text-white">Home</a>
+                                            <a href="#home" class="nav-item nav-link btn btn-outline-secondary border-white py-3 px-4 m-2">Home</a>
                                         </li>
                                         <li>
-                                            <a href="" class="btn btn-outline-secondary border-white py-3 px-4 m-2 mb-5 text-white">About</a>
+                                            <a href="#abouts" class="nav-item btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">About</a>
                                         </li>
                                         <li>
-                                            <a href="" class="btn btn-outline-secondary border-white py-3 px-4 m-2 mb-5 text-white">Technologies</a>
+                                            <a href="#technology" class="nav-item btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Technologies</a>
                                         </li>
                                         <li>
-                                            <a href="" class="btn btn-outline-secondary border-white py-3 px-4 m-2 mb-5 text-white">Experience</a>
+                                            <a href="#experience" class="nav-item btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Experience</a>
                                         </li>
                                         <li>
-                                            <a href="" class="btn btn-outline-secondary border-white py-3 px-4 m-2 mb-5 text-white">Contact</a>
+                                            <a href="#form" class="nav-item btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Contact</a>
                                         </li>
 
                                     </ul>
@@ -91,7 +91,7 @@
 
                         </div>
 
-                        <div class="loader">
+                        <div class="loader mt-2">
 
                             <span></span>
                             <span></span>
@@ -99,58 +99,6 @@
                             <span></span>
 
                         </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Header overlay -->
-        <div class="header-overlay vh-100">
-
-            <div class="row">
-
-                <div class="col-sm-2 col-md-11 social d-flex flex-row justify-content-center">
-
-                    <div class="p-4">
-
-                        <a href=""><i class="fab fa-github text-white"></i></a>
-                        <a href=""><i class="fab fa-linkedin text-white"></i></a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="d-flex flex-row">
-
-                <div class="col-sm-9 col-md-12 text-center d-flex flex-column align-items-center">
-
-                    <div class="header-text d-grid gap-3">
-
-                        <div class="col-12">
-                            <h1 class="text-uppercase"><span class="l-than">&lt</span> ALI SYED / <span class="g-than">&gt</span></h1>
-                        </div>
-
-                        <div class="col-12">
-                            <P>&lt Je suis un développeur web full stack / &gt</P>
-                        </div>
-
-                        <div class="col-12">
-                            <p class="lead">&lt Coding est ma vie &gt</p>
-                        </div>
-
-                    </div>
-
-                    <div class="mt-5 col-md-">
-
-                        <a class="btn btn-outline-light btn-projet text-white" href="">&lt Portfolio / &gt</a>
-                        </a>
 
 
                     </div>
@@ -163,8 +111,66 @@
 
     </header>
 
+    <div class="jumbotron jumbotron-fluid vh-100 banner">
+
+        <div class="container">
+
+            <div class="content-box">
+
+                <div class="row">
+
+                    <div class="col-md-11 social d-flex flex-row justify-content-center">
+
+                        <div class="p-4">
+
+                            <a href=""><i class="fab fa-github text-white"></i></a>
+                            <a href=""><i class="fab fa-linkedin text-white"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-row">
+
+                    <div class="col-sm-9 col-md-12 text-center d-flex flex-column align-items-center">
+
+                        <div class="header-text d-grid gap-3">
+
+                            <div class="col-12">
+                                <h1 class="text-uppercase text-white"><span class="l-than">&lt</span> ali reza syed / <span class="g-than">&gt</span></h1>
+                            </div>
+
+                            <div class="col-12">
+                                <P>&lt Je suis un développeur web full stack / &gt</P>
+                            </div>
+
+                            <div class="col-12">
+                                <p class="lead">&lt Coding est ma passion &gt</p>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-5 col-md-">
+
+                            <a class="btn btn-outline-secondary btn-projet text-white" href="">&lt Portfolio / &gt</a>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <!-- About -->
-    <section id="about">
+    <section id="abouts" class="about-me">
 
         <div class="container">
 
@@ -209,7 +215,7 @@
 
 
     <!-- Technology -->
-    <section class="vh-100 text-white">
+    <section id="technology" class="vh-100 text-white">
 
         <div class="container-fluid">
 
@@ -447,7 +453,7 @@
     </section>
 
     <!-- Contact us  -->
-    <div class="contact-us-form">
+    <div id="form" class="contact-us-form">
 
         <div class="container">
 
@@ -489,12 +495,12 @@
 
 
 
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
