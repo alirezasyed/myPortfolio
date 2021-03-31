@@ -74,12 +74,23 @@ p {
     align-items: center;
 }
 
-.social {
+.social a {
     font-size: 2em;
+    padding: 3rem;
 }
 
-.banner .social a i {
-    margin-left: 115px;
+.social .fa-instagram {
+    color: #0e76a8;
+}
+
+.social .fa-github {
+    color: #333;
+}
+
+.fa-github:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+    color: slateblue;
 }
 
 .header-text .l-than,
@@ -200,10 +211,6 @@ p {
 
 /* ================ About =================== */
 
-.about-me {
-    height: 100%;
-}
-
 .about-me .about-image {
     width: 100%;
     height: 100%;
@@ -212,6 +219,10 @@ p {
 
 
 /* ================ Technology =================== */
+
+#technology .width img {
+    width: 100%;
+}
 
 
 /* ================ Contact Us =================== */
