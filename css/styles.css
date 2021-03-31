@@ -28,7 +28,7 @@ p {
 
 .header {
     position: relative;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .header .menu_list ul li a {
@@ -48,20 +48,23 @@ p {
     transition: all 1s;
 }
 
-.navbar {
+
+/* .navbar {
     background: transparent;
     transition: 0.5s;
-}
+} */
 
-.scrolled {
+
+/* .scrolled {
     background-color: #000;
     transition: 0.5s;
-}
+} */
 
-.navbar-light .navbar-nav .nav-link {
+
+/* .navbar-light .navbar-nav .nav-link {
     color: #000;
     background-color: #fff;
-}
+} */
 
 
 /* ================ Jumborton =================== */
@@ -224,6 +227,50 @@ p {
     width: 100%;
 }
 
+#technology .fa-html5 {
+    color: #e34c26;
+}
+
+#technology .fa-css3-alt {
+    color: #264de4;
+}
+
+#technology .fa-bootstrap {
+    color: #602C50;
+}
+
+#technology .fa-sass {
+    color: #CD6799;
+}
+
+#technology .fa-less {
+    color: #0E76A8;
+}
+
+#technology .fa-wordpress {
+    color: #00749C;
+}
+
+#technology .fa-symfony {
+    color: #000;
+}
+
+#technology .fa-laravel {
+    color: #fb503b;
+}
+
+#technology .fa-js-square {
+    color: #f0db4f;
+}
+
+#technology .fa-react {
+    color: #61DBFB;
+}
+
+#technology .fa-angular {
+    color: #a6120d;
+}
+
 
 /* ================ Contact Us =================== */
 
@@ -276,4 +323,17 @@ p {
     background: blueviolet;
     color: #fff;
     border-color: blueviolet;
+}
+
+@media screen and (max-width: 480px) {
+    .menu_list .loader {
+        position: absolute;
+        left: 85%;
+        top: -13%;
+        width: 12px;
+        height: 75px;
+        border-radius: 50%;
+        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
+        animation: animate 0.5s linear infinite;
+    }
 }
