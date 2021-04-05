@@ -290,6 +290,22 @@ p {
     transition: all 1s;
 }
 
+.form-control::placeholder {
+    color: #fff;
+    /* Firefox */
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
+
 #message {
     height: 117px;
     resize: none;
@@ -357,8 +373,43 @@ p {
 }
 
 @media screen and (max-width: 300px) {
+    .menu_list .loader {
+        position: absolute;
+        left: 85%;
+        top: 10px;
+        width: 12px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
+        animation: animate 0.5s linear infinite;
+    }
     .social a {
         font-size: 1.8em;
         padding: .7rem;
+    }
+    #conteneur_menu button {
+        padding-top: 10%;
+    }
+    .section-title p {
+        font-size: 16px;
+    }
+    .section-title h2 {
+        font-size: large;
+    }
+    #abouts h2 {
+        font-size: large;
+    }
+    #technology i {
+        font-size: 3.8rem;
+        padding-left: 35px;
+    }
+    #technology img {
+        margin-left: 35px;
+    }
+    #projet {
+        margin-top: 200%;
+    }
+    #form {
+        margin-top: 250%;
     }
 }
