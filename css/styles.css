@@ -28,7 +28,6 @@ p {
 
 .header {
     position: relative;
-    /* z-index: 1000; */
 }
 
 .header .menu_list ul li a {
@@ -41,30 +40,15 @@ p {
 }
 
 .header .menu_list ul li a:hover {
+    background: blueviolet;
+    color: #fff;
+    border-color: blueviolet;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
 }
-
-
-/* .navbar {
-    background: transparent;
-    transition: 0.5s;
-} */
-
-
-/* .scrolled {
-    background-color: #000;
-    transition: 0.5s;
-} */
-
-
-/* .navbar-light .navbar-nav .nav-link {
-    color: #000;
-    background-color: #fff;
-} */
 
 
 /* ================ Jumborton =================== */
@@ -79,7 +63,7 @@ p {
 
 .social a {
     font-size: 2em;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .social .fa-instagram {
@@ -121,6 +105,17 @@ p {
     padding: 10px 30px;
     font-size: 19px;
     border-radius: 3px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.btn-projet:hover {
+    background: blueviolet;
+    color: #fff;
+    border-color: blueviolet;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -325,15 +320,38 @@ p {
     border-color: blueviolet;
 }
 
+
+/* ================ Mobile Media Queries =================== */
+
 @media screen and (max-width: 480px) {
     .menu_list .loader {
         position: absolute;
         left: 85%;
-        top: -13%;
+        top: 0;
         width: 12px;
-        height: 75px;
+        height: 50px;
         border-radius: 50%;
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
+    }
+    #projet {
+        margin-top: 100px;
+    }
+    #technology i,
+    img {
+        margin-bottom: 50px;
+    }
+    #projet .card {
+        margin-bottom: 50px;
+    }
+    .social a {
+        font-size: 1.8em;
+        padding: .5rem;
+    }
+    .header-text h1 {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 45px;
+        padding-top: 30px;
     }
 }
