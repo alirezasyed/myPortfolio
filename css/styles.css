@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none !important;
 }
 
 body {
@@ -28,6 +27,11 @@ p {
 
 .header {
     position: relative;
+}
+
+#conteneur_menu button {
+    padding-top: 10%;
+    outline: none !important;
 }
 
 .header .menu_list ul li a {
@@ -78,11 +82,6 @@ p {
 .fa-instagram:hover,
 .fa-linkedin:hover {
     color: slateblue;
-}
-
-.header-text .l-than,
-.g-than {
-    color: rgb(104, 40, 150);
 }
 
 .header-text h1 {
@@ -222,6 +221,14 @@ p {
     width: 100%;
 }
 
+#technology i {
+    margin: 40px;
+}
+
+#technology .width img {
+    margin: 40px;
+}
+
 #technology .fa-html5 {
     color: #e34c26;
 }
@@ -339,40 +346,25 @@ p {
 
 /* ================ Mobile Media Queries =================== */
 
-@media screen and (max-width: 480px) {
-    .menu_list .loader {
-        position: absolute;
-        left: 85%;
-        top: 0;
-        width: 12px;
-        height: 50px;
-        border-radius: 50%;
-        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
-        animation: animate 0.5s linear infinite;
-    }
-    #projet {
-        margin-top: 100px;
-    }
-    #technology i,
-    img {
-        margin-bottom: 50px;
-    }
-    #projet .card {
-        margin-bottom: 50px;
-    }
-    .social a {
-        font-size: 1.8em;
-        padding: .5rem;
-    }
-    .header-text h1 {
-        font-size: 25px;
-        font-weight: 300;
-        line-height: 45px;
-        padding-top: 30px;
-    }
-}
+@media screen and (min-width: 1200px)
+/* Laptops */
 
-@media screen and (max-width: 300px) {
+{}
+
+@media screen and (min-width: 992px)
+/* Mobile Tablet landscape */
+
+{}
+
+@media screen and (min-width: 768px)
+/* Tablet portrait */
+
+{}
+
+@media screen and (min-width: 576px)
+/* Mobile landscape */
+
+{
     .menu_list .loader {
         position: absolute;
         left: 85%;
@@ -387,7 +379,51 @@ p {
         font-size: 1.8em;
         padding: .7rem;
     }
-    #conteneur_menu button {
+    #conteneur_menu button.hamburger-inner {
+        padding-top: 10%;
+    }
+    .section-title p {
+        font-size: 16px;
+    }
+    .section-title h2 {
+        font-size: large;
+    }
+    #abouts h2 {
+        font-size: large;
+    }
+    #projet {
+        margin-top: 80%;
+    }
+    #form {
+        margin-top: 150%;
+    }
+}
+
+@media screen and (max-width: 575.98px)
+/* Mobile */
+
+{
+    .menu_list .loader {
+        position: absolute;
+        left: 85%;
+        top: 10px;
+        width: 12px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
+        animation: animate 0.5s linear infinite;
+    }
+    .social a {
+        font-size: 1.8em;
+        padding: 1rem;
+    }
+    .header-text h1 {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 45px;
+        padding-top: 30px;
+    }
+    #conteneur_menu button.hamburger-inner {
         padding-top: 10%;
     }
     .section-title p {
@@ -400,16 +436,15 @@ p {
         font-size: large;
     }
     #technology i {
-        font-size: 3.8rem;
-        padding-left: 35px;
-    }
-    #technology img {
-        margin-left: 35px;
+        font-size: 4rem;
     }
     #projet {
-        margin-top: 200%;
+        margin: 100% 0 0 10%;
+    }
+    #projet .card {
+        margin-bottom: 10%;
     }
     #form {
-        margin-top: 250%;
+        margin: 150% 0 0 10%;
     }
 }
