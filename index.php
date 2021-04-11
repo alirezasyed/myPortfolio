@@ -17,6 +17,7 @@
 
 
     <!-- Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href="css/hamburgers.min.css" rel="stylesheet">
@@ -68,7 +69,7 @@
                                     <ul class="navbar-nav ml-auto text-uppercase">
 
                                         <li>
-                                            <a href="#home" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Home</a>
+                                            <a href="#home" tabindex="1" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Home</a>
                                         </li>
                                         <li>
                                             <a href="#abouts" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">About</a>
@@ -77,7 +78,7 @@
                                             <a href="#technology" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Technologies</a>
                                         </li>
                                         <li>
-                                            <a href="#experience" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Projet</a>
+                                            <a href="#projet" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Projet</a>
                                         </li>
                                         <li>
                                             <a href="#form" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Contact</a>
@@ -111,6 +112,9 @@
         <hr>
 
     </header>
+
+    <canvas id="canvas1">
+    </canvas>
 
     <div class="jumbotron jumbotron-fluid vh-100 banner">
 
@@ -163,6 +167,8 @@
 
     </div>
 
+
+
     <!-- About -->
     <section id="abouts" class="about-me vh-100">
 
@@ -187,7 +193,7 @@
 
                         <div class="col-12">
 
-                            <p class="lead">Je suis un nouveau diplômé de l'Accèss Code School et un développeur web passionné. j'aime consacrer mon temps à la résolution de problèmes complexes et à la recherche de solutions,</p>
+                            <p class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1s">Je suis un nouveau diplômé de l'Accèss Code School et un développeur web passionné. j'aime consacrer mon temps à la résolution de problèmes complexes et à la recherche de solutions,</p>
 
                         </div>
 
@@ -234,7 +240,7 @@
 
             </div>
 
-            <div class="row">
+            <div class="row d-flex justify-content-center">
 
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2">
 
@@ -285,20 +291,24 @@
 
                 </div>
 
-                <div class="col-3 col-sm-2 col-md-2 col-lg-1">
 
-                    <div class="width">
 
-                        <img src="images/aws.png" alt="">
+
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2">
+
+                    <div class="">
+
+                        <i class="fa-5x fab fa-js-square"></i>
 
                     </div>
-
                 </div>
 
 
-                <div class="col-3 col-sm-2 offset-sm-1 col-md-3 col-lg-1 offset-lg-1">
 
-                    <div class="width">
+
+                <div class="col-3 col-sm-2 offset-sm-1 col-md-2 col-lg-1">
+
+                    <div class="php">
 
                         <img src="images/php.png" alt="">
 
@@ -306,9 +316,9 @@
 
                 </div>
 
-                <div class="col-3 offset-1 col-sm-2 col-md-2 col-lg-1 offset-lg-1">
+                <div class="col-3 offset-1 col-sm-2 col-md-2 col-lg-2">
 
-                    <div class="width">
+                    <div class="mysql">
 
                         <img src="images/logo-mysql.png" alt="">
 
@@ -316,7 +326,18 @@
 
                 </div>
 
-                <div class="col-3 offset-1 col-sm-3 col-md-3 col-lg-2 offset-lg-1">
+
+                <div class="col-3 col-sm-2 col-md-2 col-lg-1">
+
+                    <div class="aws">
+
+                        <img src="images/aws.png" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2 offset-lg-1">
 
                     <div class="">
 
@@ -345,16 +366,9 @@
 
                 </div>
 
-                <div class="col-4 col-sm-3 col-md-3 col-lg-1 offset-lg-2">
 
-                    <div class="">
 
-                        <i class="fa-5x fab fa-js-square"></i>
-
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-6 text-center col-md-3 offset-md-1 col-lg-1 offset-lg-1">
+                <div class="col-6 col-sm-6 text-center col-md-5 col-lg-2">
 
                     <div class="">
 
@@ -364,7 +378,7 @@
 
                 </div>
 
-                <div class="col-6 col-sm-6 text-center col-md-4 col-lg-1 offset-lg-1">
+                <div class="col-6 col-sm-6 text-center col-md-4 col-lg-2">
 
                     <div class="">
 
@@ -374,10 +388,9 @@
 
                 </div>
 
+
+
             </div>
-
-
-        </div>
 
     </section>
 
@@ -456,6 +469,7 @@
 
     </section>
 
+
     <!-- Contact us  -->
     <div id="form" class="contact-us-form">
 
@@ -499,14 +513,20 @@
 
 
 
+
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 
     <script>
+        new WOW().init();
+
+
         $(document).ready(function() {
             $('.hamburger').click(function() {
                 if (!$('#navContent').hasClass('collapsing')) {

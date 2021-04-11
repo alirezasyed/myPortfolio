@@ -22,6 +22,13 @@ p {
     font-size: 14px;
 }
 
+#canvas1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
 
 /* ================ Menu =================== */
 
@@ -217,8 +224,43 @@ p {
 
 /* ================ Technology =================== */
 
-#technology .width img {
-    width: 100%;
+#technology .aws {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#technology .aws img {
+    max-width: 100px;
+    width: auto;
+    height: 50px;
+}
+
+#technology .php {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#technology .php img {
+    max-width: 100px;
+    width: auto;
+    height: 85px;
+}
+
+#technology .mysql {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#technology .mysql img {
+    max-width: 115px;
+    width: auto;
+    height: 85px;
 }
 
 #technology i {
@@ -349,19 +391,63 @@ p {
 @media screen and (min-width: 1200px)
 /* Laptops */
 
-{}
+{
+    /* .menu_list .loader {
+        position: absolute;
+        left: 85%;
+        top: 10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
+        animation: animate 0.5s linear infinite;
+    } */
+}
 
 @media screen and (min-width: 992px)
-/* Mobile Tablet landscape */
+/* Tablet landscape */
 
 {}
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) and (max-width: 991.98px)
 /* Tablet portrait */
 
-{}
+{
+    /* ================ Animated logo =================== */
+    .menu_list .loader {
+        position: absolute;
+        left: 85%;
+        bottom: 15%;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
+        animation: animate 0.5s linear infinite;
+    }
+    #technology i {
+        font-size: 4em;
+    }
+    #technology .php img {
+        max-width: 80px;
+        width: auto;
+        height: 60px;
+    }
+    #technology .mysql img {
+        max-width: 80px;
+        width: auto;
+        height: 60px;
+    }
+    #technology .aws img {
+        max-width: 80px;
+        width: auto;
+        height: 50px;
+    }
+    #projet {
+        margin-top: 50%;
+    }
+}
 
-@media screen and (min-width: 576px)
+@media screen and (min-width: 576px) and (max-width: 767.98px)
 /* Mobile landscape */
 
 {
@@ -390,6 +476,24 @@ p {
     }
     #abouts h2 {
         font-size: large;
+    }
+    #technology i {
+        font-size: 3.5em;
+    }
+    #technology .php img {
+        max-width: 70px;
+        width: auto;
+        height: 50px;
+    }
+    #technology .mysql img {
+        max-width: 70px;
+        width: auto;
+        height: 50px;
+    }
+    #technology .aws img {
+        max-width: 80px;
+        width: auto;
+        height: 50px;
     }
     #projet {
         margin-top: 80%;
@@ -436,7 +540,25 @@ p {
         font-size: large;
     }
     #technology i {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+    #technology .aws {
+        margin-top: 7px;
+    }
+    #technology .php img {
+        max-width: 65px;
+        width: auto;
+        height: 40px;
+    }
+    #technology .mysql img {
+        max-width: 65px;
+        width: auto;
+        height: 40px;
+    }
+    #technology .aws img {
+        max-width: 65px;
+        width: auto;
+        height: 30px;
     }
     #projet {
         margin: 100% 0 0 10%;
@@ -446,5 +568,28 @@ p {
     }
     #form {
         margin: 150% 0 0 10%;
+    }
+}
+
+@media screen and (max-width: 319.98px) {
+    #technology i {
+        font-size: 3rem;
+    }
+    #technology .aws {
+        margin-top: 7px;
+    }
+    #technology .php {
+        margin-left: 10px;
+    }
+    #technology .mysql {
+        margin-left: 10px;
+    }
+    #technology .aws {
+        height: 100%;
+        width: 100%;
+        margin-left: 30px;
+    }
+    .section-title h2 {
+        font-size: small;
     }
 }
