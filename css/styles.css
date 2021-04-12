@@ -340,7 +340,7 @@ p {
 /* ================ Contact Us =================== */
 
 #form {
-    height: 350px;
+    padding-bottom: 5%;
 }
 
 #form .contact-line {
@@ -441,7 +441,7 @@ p {
     }
     /* ================ Technology =================== */
     #technology i {
-        font-size: 4em;
+        font-size: 4.5em;
     }
     #technology .php {
         margin-top: 7px;
@@ -561,7 +561,7 @@ p {
         margin-bottom: 10%;
     }
     #form {
-        padding: 150% 0px 70% 0;
+        padding: 150% 0px 200px 0;
     }
 }
 
@@ -581,6 +581,9 @@ p {
         animation: animate 0.5s linear infinite;
     }
     /* ======== Jumborton ========== */
+    .banner {
+        margin-left: 6%;
+    }
     .social a {
         font-size: 1.8em;
         padding: 1rem;
@@ -603,18 +606,17 @@ p {
     /* ======== About ========== */
     #abouts h2 {
         font-size: large;
+        margin-left: 12%;
     }
-    #abouts .about-line {
-        color: #fff;
-        width: calc(100% + 52px);
+    #abouts p {
+        margin-left: 17%;
+    }
+    #abouts .about-image {
+        margin-left: 5%;
     }
     /* ======== Technology ========== */
     #technology {
-        margin-left: 7%;
-    }
-    #technology .tech-line {
-        color: #fff;
-        width: calc(100% + 52px);
+        margin-left: 4%;
     }
     #technology i {
         font-size: 3rem;
@@ -623,7 +625,7 @@ p {
         margin-top: 7px;
         height: 100%;
         width: 100%;
-        margin-left: 10px;
+        margin-left: -10px;
     }
     #technology .aws img {
         max-width: 200px;
@@ -680,6 +682,9 @@ p {
     #abouts .about-me {
         margin-left: 10%;
     }
+    #abouts .about-image {
+        margin-left: 13%;
+    }
     #abouts .about-line {
         color: #fff;
         width: calc(100% + 52px);
@@ -689,9 +694,11 @@ p {
         margin-left: 12%;
     }
     /* ======== Technology ======== */
-    #technology .tech-line {
-        color: #fff;
-        width: calc(100% + 52px);
+    #technology .sass {
+        margin-left: -12%;
+    }
+    #technology .wordpress {
+        margin-left: -15%;
     }
     #technology i {
         font-size: 3rem;

@@ -41,15 +41,11 @@
 
                     <div id="conteneur_menu">
 
-                        <!-- <div> -->
-
                         <button class="hamburger hamburger--emphatic navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
                                 </span>
                         </button>
-
-                        <!-- </div> -->
 
                     </div>
 
@@ -179,7 +175,6 @@
                 <div class="col-12">
 
                     <h2 class="text-white">&lt About Me / &gt</h2>
-                    <hr class="about-line">
 
                 </div>
 
@@ -232,8 +227,6 @@
 
                         <h2>&lt Technologies et Skills / &gt</h2>
 
-                        <hr class="tech-line">
-
                     </div>
 
                 </div>
@@ -273,7 +266,7 @@
 
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2">
 
-                    <div class="">
+                    <div class="sass">
 
                         <i class="fa-5x fab fa-sass"></i>
 
@@ -337,7 +330,7 @@
 
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
 
-                    <div class="">
+                    <div class="wordpress">
 
                         <i class="fa-5x fab fa-wordpress"></i>
 
@@ -401,8 +394,7 @@
 
                 <div class="col-md-12">
 
-                    <h3 class="text-uppercase display-6 text-white">Mes projets</h3>
-                    <hr class="projet-line">
+                    <h3 class="text-uppercase display-6 text-white mb-5">Mes projets</h3>
 
                 </div>
 
@@ -419,10 +411,24 @@
 
                             <img src="images/bakery.png" class="card-img-top" alt="...">
 
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+                            <div class="card-body d-flex flex-column align-content-around">
+                                <h5 class="card-title">Bakery</h5>
+                                <a href="#" class="btn btn-outline-secondary">Let's Click</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card">
+
+                            <img src="images/bakery.png" class="card-img-top" alt="Bakery">
+
+                            <div class="card-body d-flex flex-column align-content-around">
+                                <h5 class="card-title">Bomber Man</h5>
+                                <a href="#" class="btn btn-outline-secondary">Let's Click</a>
                             </div>
 
                         </div>
@@ -435,26 +441,9 @@
 
                             <img src="images/bakery.png" class="card-img-top" alt="...">
 
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="card">
-
-                            <img src="images/bakery.png" class="card-img-top" alt="...">
-
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+                            <div class="card-body d-flex flex-column align-content-around">
+                                <h5 class="card-title">Files Explorer</h5>
+                                <a href="#" class="btn btn-outline-secondary">Let's Click</a>
                             </div>
 
                         </div>
@@ -475,11 +464,9 @@
 
             <div class="d-flex flex-row">
 
-                <div class="col-md-12 text-light text-center w-100">
+                <div class="col-md-12 text-light text-center w-100 mb-4">
 
                     <h3>Contact me</h3>
-
-                    <hr class="contact-line">
 
                 </div>
 
