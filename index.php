@@ -292,8 +292,6 @@
                 </div>
 
 
-
-
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2">
 
                     <div class="">
@@ -306,7 +304,7 @@
 
 
 
-                <div class="col-4 col-sm-2 offset-sm-1 col-md-2 col-lg-2">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-3">
 
                     <div class="php">
 
@@ -316,7 +314,7 @@
 
                 </div>
 
-                <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2">
 
                     <div class="mysql">
 
@@ -327,7 +325,7 @@
                 </div>
 
 
-                <div class="col-3 col-sm-2 col-md-2 col-lg-1">
+                <div class="col-3 col-sm-2 col-md-3 col-lg-2">
 
                     <div class="aws">
 
@@ -337,7 +335,7 @@
 
                 </div>
 
-                <div class="col-4 col-sm-3 col-md-3 col-lg-2 offset-lg-1">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2">
 
                     <div class="">
 
@@ -356,7 +354,7 @@
 
                 </div>
 
-                <div class="col-4 col-sm-3 col-md-3 col-lg-2">
+                <div class="col-4 col-sm-2 col-md-3 col-lg-2">
 
                     <div class="">
 
@@ -368,7 +366,7 @@
 
 
 
-                <div class="col-5 offset-1 col-sm-6 text-center col-md-5 col-lg-2">
+                <div class="col-5 offset-1 col-sm-4 col-md-4 text-center col-lg-2">
 
                     <div class="">
 
@@ -378,7 +376,7 @@
 
                 </div>
 
-                <div class="col-5 offset-1 col-sm-6 text-center col-md-4 col-lg-2">
+                <div class="col-5 offset-1 col-sm-6 text-center col-md-6 col-lg-2">
 
                     <div class="">
 

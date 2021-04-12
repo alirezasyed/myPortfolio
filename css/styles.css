@@ -138,21 +138,21 @@ p {
 
 /* ================ Scroll bar =================== */
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 25px;
 }
 
-::-webkit-scrollbar-track {
+ ::-webkit-scrollbar-track {
     border: 8px solid #232943;
     box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background-color: #173f5f;
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+ ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
@@ -234,8 +234,8 @@ p {
 
 #technology .aws img {
     /* max-width: 100px;
-    width: auto;
-    height: 50px; */
+width: auto;
+height: 50px; */
 }
 
 #technology .php {
@@ -252,10 +252,10 @@ p {
 }
 
 #technology .mysql {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%; */
+    height: 100%;
 }
 
 #technology .mysql img {
@@ -396,18 +396,7 @@ p {
 @media screen and (min-width: 1200px)
 /* Laptops */
 
-{
-    /* .menu_list .loader {
-        position: absolute;
-        left: 85%;
-        top: 10px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
-        animation: animate 0.5s linear infinite;
-    } */
-}
+{}
 
 @media screen and (min-width: 992px)
 /* Tablet landscape */
@@ -437,31 +426,43 @@ p {
         width: auto;
         height: 60px;
     }
-    #technology .mysql img {
-        /* max-width: 80px;
-        width: auto;
-        height: 60px; */
-    }
-    #technology .aws img {
-        /* max-width: 80px;
-        width: auto;
-        height: 50px; */
-    }
     #projet {
         margin-top: 50%;
     }
+    #technology .aws {
+        margin-top: 7px;
+        height: 100%;
+        width: 100%;
+    }
+    #technology .aws img {
+        max-width: 200px;
+        width: auto;
+        height: 100px;
+    }
+    #technology .php {
+        margin-top: 7px;
+        height: 100%;
+        width: 100%;
+        margin-left: 15px;
+    }
+    #technology .mysql {
+        margin-top: 7px;
+        height: 100%;
+        width: 100%;
+        margin-left: 15px;
+    }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767.98px)
+@media screen and (max-width: 767.98px)
 /* Mobile landscape */
 
 {
     .menu_list .loader {
         position: absolute;
         left: 85%;
-        top: 10px;
+        top: 40px;
         width: 12px;
-        height: 40px;
+        height: 50px;
         border-radius: 50%;
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
@@ -476,35 +477,62 @@ p {
     .section-title p {
         font-size: 16px;
     }
+    #abouts .about-line {
+        color: #fff;
+        width: calc(100% + 52px);
+    }
     .section-title h2 {
         font-size: large;
     }
     #abouts h2 {
         font-size: large;
     }
+    #technology .tech-line {
+        color: #fff;
+        width: calc(100% + 52px);
+    }
     #technology i {
         font-size: 3.5em;
     }
+    #technology .php {
+        margin-left: 30px;
+    }
     #technology .php img {
-        max-width: 70px;
+        max-width: 80px;
         width: auto;
         height: 50px;
     }
+    #technology .mysql {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    #technology .mysql {
+        margin-left: 30px;
+    }
     #technology .mysql img {
-        /* max-width: 70px;
+        max-width: 100px;
         width: auto;
-        height: 50px; */
+        height: 80px;
+    }
+    #technology .aws {
+        margin-left: -25px;
     }
     #technology .aws img {
-        /* max-width: 80px;
+        max-width: 70px;
         width: auto;
-        height: 50px; */
+        height: 85px;
     }
-    #projet {
-        margin-top: 80%;
+    #projet .projet-line {
+        color: #fff;
+        width: 100%;
+    }
+    #projet .card {
+        margin-bottom: 10%;
     }
     #form {
-        margin-top: 150%;
+        margin-top: 70%;
     }
 }
 
@@ -512,16 +540,18 @@ p {
 /* Mobile */
 
 {
+    /* ======== Animated loader ========== */
     .menu_list .loader {
         position: absolute;
-        left: 85%;
-        top: 10px;
+        left: 95%;
+        top: 20px;
         width: 12px;
-        height: 40px;
+        height: 50px;
         border-radius: 50%;
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
     }
+    /* ======== Jumborton ========== */
     .social a {
         font-size: 1.8em;
         padding: 1rem;
@@ -541,68 +571,17 @@ p {
     .section-title h2 {
         font-size: large;
     }
+    /* ======== About ========== */
     #abouts h2 {
         font-size: large;
-    }
-    #technology i {
-        font-size: 3rem;
-    }
-    #technology .aws {
-        margin-top: 7px;
-    }
-    #technology .php img {
-        max-width: 65px;
-        width: auto;
-        height: 40px;
-    }
-    #technology .mysql img {
-        /* max-width: 65px;
-        width: auto;
-        height: 40px; */
-    }
-    #technology .aws img {
-        /* max-width: 65px;
-        width: auto;
-        height: 30px; */
-    }
-    #projet {
-        margin: 100% 0 0 10%;
-    }
-    #projet .card {
-        margin-bottom: 10%;
-    }
-    #form {
-        margin: 150% 0 0 10%;
-    }
-    #technology .aws img {
-        max-width: 100px;
-        width: auto;
-        height: 50px;
-    }
-}
-
-@media screen and (max-width: 319.98px) {
-    .banner {
-        margin-left: 8%;
-        text-align: center;
-    }
-    .banner .header-text p {
-        font-size: 13px;
-    }
-    #abouts .about-me {
-        margin-left: 10%;
     }
     #abouts .about-line {
         color: #fff;
         width: calc(100% + 52px);
     }
-    #abouts h2 {
-        margin-left: 20%;
-        font-size: 20px;
-    }
-    .section-title h2 {
-        font-size: 20px;
-        margin-left: 9%;
+    /* ======== Technology ========== */
+    #technology {
+        margin-left: 7%;
     }
     #technology .tech-line {
         color: #fff;
@@ -613,35 +592,108 @@ p {
     }
     #technology .aws {
         margin-top: 7px;
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
     }
-    #technology .php {
+    #technology .aws img {
+        max-width: 200px;
+        width: auto;
+        height: 65px;
+    }
+    #technology .mysql {
         margin-left: 10px;
     }
     #technology .mysql img {
         max-width: 80px;
         width: auto;
-        height: 120px;
+        height: 100px;
+    }
+    #technology .php {
+        margin-left: 10px;
+    }
+    #technology .php img {
+        max-width: 65px;
+        width: auto;
+        height: 45px;
+    }
+    /* ======== Projet ========== */
+    #projet {
+        margin: 50% 0 0 7%;
+    }
+    #projet .projet-line {
+        color: #fff;
+        width: 100%;
+    }
+    #projet .card {
+        margin-bottom: 10%;
+    }
+    #form {
+        margin: 120% 0 20% 7%;
+        padding-bottom: 30%;
+    }
+}
+
+@media screen and (max-width: 319.98px) {
+    /* ======== Jumborton ======== */
+    .banner {
+        margin-left: 8%;
+        text-align: center;
+    }
+    .banner .header-text p {
+        font-size: 13px;
+    }
+    /* ======== About ======== */
+    #abouts h2 {
+        margin-left: 20%;
+        font-size: 20px;
+    }
+    #abouts .about-me {
+        margin-left: 10%;
+    }
+    #abouts .about-line {
+        color: #fff;
+        width: calc(100% + 52px);
+    }
+    .section-title h2 {
+        font-size: 18px;
+        margin-left: 12%;
+    }
+    /* ======== Technology ======== */
+    #technology .tech-line {
+        color: #fff;
+        width: calc(100% + 52px);
+    }
+    #technology i {
+        font-size: 3rem;
     }
     #technology .aws {
         height: 100%;
         width: 100%;
+        margin-top: -2px;
         margin-left: 40px;
+    }
+    #technology .php {
+        height: 100%;
+        width: 100%;
+        margin-left: 15px;
     }
     #technology .php img {
         max-width: 65px;
         width: auto;
         height: 40px;
     }
+    #technology .mysql {
+        height: 100%;
+        width: 100%;
+        margin-left: 20px;
+    }
     #technology .mysql img {
-        /* max-width: 65px;
+        max-width: 80px;
         width: auto;
-        height: 40px; */
+        height: 110px;
     }
-    #technology .aws img {
-        /* max-width: 65px;
-        width: auto;
-        height: 30px; */
-    }
+    /* ======== Projet ======== */
     #projet {
         margin-left: 17%;
     }
