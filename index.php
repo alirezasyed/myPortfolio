@@ -172,7 +172,7 @@
     <!-- About -->
     <section id="abouts" class="about-me vh-100">
 
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="row text-center mb-5">
 
@@ -304,7 +304,7 @@
 
 
 
-                <div class="col-4 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2 offset-lg-1">
 
                     <div class="php">
 
@@ -325,7 +325,7 @@
                 </div>
 
 
-                <div class="col-3 col-sm-2 col-md-3 col-lg-2">
+                <div class="col-3 col-sm-2 col-md-3 col-lg-2 col-xl-2">
 
                     <div class="aws">
 
@@ -335,7 +335,7 @@
 
                 </div>
 
-                <div class="col-4 col-sm-3 col-md-3 col-lg-2">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
 
                     <div class="">
 
@@ -344,7 +344,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-sm-3 col-md-3 col-lg-2">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
 
                     <div class="">
 
@@ -395,7 +395,7 @@
     <!-- Projets -->
     <section id="projet" class="vh-100">
 
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="row text-center">
 
@@ -471,7 +471,7 @@
     <!-- Contact us  -->
     <div id="form" class="contact-us-form">
 
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="d-flex flex-row">
 

@@ -216,6 +216,11 @@ p {
 
 /* ================ About =================== */
 
+#abouts .about-line {
+    color: #fff;
+    width: calc(100% + 52px);
+}
+
 .about-me .about-image {
     width: 100%;
     height: 100%;
@@ -225,6 +230,12 @@ p {
 
 /* ================ Technology =================== */
 
+
+/* #technology .tech-line {
+    color: #fff;
+    width: calc(100% + 52px);
+} */
+
 #technology .aws {
     display: flex;
     flex-direction: column;
@@ -233,9 +244,9 @@ p {
 }
 
 #technology .aws img {
-    /* max-width: 100px;
-width: auto;
-height: 50px; */
+    max-width: 162px;
+    width: auto;
+    height: 96px;
 }
 
 #technology .php {
@@ -246,7 +257,7 @@ height: 50px; */
 }
 
 #technology .php img {
-    max-width: 100px;
+    max-width: 120px;
     width: auto;
     height: 85px;
 }
@@ -259,9 +270,9 @@ height: 50px; */
 }
 
 #technology .mysql img {
-    max-width: 100px;
+    max-width: 150px;
     width: auto;
-    height: 100px;
+    height: 124px;
 }
 
 #technology i {
@@ -316,11 +327,25 @@ height: 50px; */
     color: #a6120d;
 }
 
+#projet {
+    margin-top: 25%;
+}
+
+#projet .projet-line {
+    color: #fff;
+    width: calc(100% + 52px);
+}
+
 
 /* ================ Contact Us =================== */
 
 #form {
-    margin-bottom: 50px;
+    height: 350px;
+}
+
+#form .contact-line {
+    color: #fff;
+    width: calc(100% + 52px);
 }
 
 .contact-us-form .form-control {
@@ -398,11 +423,6 @@ height: 50px; */
 
 {}
 
-@media screen and (min-width: 992px)
-/* Tablet landscape */
-
-{}
-
 @media screen and (min-width: 768px) and (max-width: 991.98px)
 /* Tablet portrait */
 
@@ -410,6 +430,7 @@ height: 50px; */
     /* ================ Animated logo =================== */
     .menu_list .loader {
         position: absolute;
+        top: 10%;
         left: 85%;
         bottom: 15%;
         width: 85px;
@@ -418,26 +439,9 @@ height: 50px; */
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
     }
+    /* ================ Technology =================== */
     #technology i {
         font-size: 4em;
-    }
-    #technology .php img {
-        max-width: 80px;
-        width: auto;
-        height: 60px;
-    }
-    #projet {
-        margin-top: 50%;
-    }
-    #technology .aws {
-        margin-top: 7px;
-        height: 100%;
-        width: 100%;
-    }
-    #technology .aws img {
-        max-width: 200px;
-        width: auto;
-        height: 100px;
     }
     #technology .php {
         margin-top: 7px;
@@ -445,11 +449,33 @@ height: 50px; */
         width: 100%;
         margin-left: 15px;
     }
+    #technology .php img {
+        max-width: 90px;
+        width: auto;
+        height: 60px;
+    }
+    #projet {
+        margin-top: 40%;
+    }
+    #technology .aws {
+        margin-top: 7px;
+        height: 100%;
+        width: 100%;
+    }
+    #technology .aws img {
+        max-width: 164px;
+        width: auto;
+        height: 76px;
+    }
     #technology .mysql {
         margin-top: 7px;
         height: 100%;
         width: 100%;
-        margin-left: 15px;
+    }
+    #technology .mysql img {
+        max-width: 162px;
+        width: auto;
+        height: 91px;
     }
 }
 
@@ -459,9 +485,9 @@ height: 50px; */
 {
     .menu_list .loader {
         position: absolute;
-        left: 85%;
-        top: 40px;
-        width: 12px;
+        left: 95%;
+        top: 25%;
+        width: 10px;
         height: 50px;
         border-radius: 50%;
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
@@ -524,6 +550,9 @@ height: 50px; */
         width: auto;
         height: 85px;
     }
+    #projet {
+        margin-top: 40%;
+    }
     #projet .projet-line {
         color: #fff;
         width: 100%;
@@ -532,7 +561,7 @@ height: 50px; */
         margin-bottom: 10%;
     }
     #form {
-        margin-top: 70%;
+        padding: 150% 0px 70% 0;
     }
 }
 
@@ -619,7 +648,7 @@ height: 50px; */
     }
     /* ======== Projet ========== */
     #projet {
-        margin: 50% 0 0 7%;
+        margin: 100% 0 0 7%;
     }
     #projet .projet-line {
         color: #fff;
@@ -629,7 +658,7 @@ height: 50px; */
         margin-bottom: 10%;
     }
     #form {
-        margin: 120% 0 20% 7%;
+        margin: 80% 0 20% 7%;
         padding-bottom: 30%;
     }
 }
