@@ -48,7 +48,7 @@ p {
 .header .menu_list ul li a:hover {
     background: blueviolet;
     color: #fff;
-    border-color: blueviolet;
+    border: 0;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -455,6 +455,10 @@ p {
     border-color: blueviolet;
 }
 
+.navbar-nav {
+    margin-left: -40px;
+}
+
 
 /* ================ Mobile Media Queries =================== */
 
@@ -478,6 +482,9 @@ p {
         border-radius: 50%;
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
+    }
+    #conteneur_menu .hamburger {
+        margin: 4% 0 0 -5%;
     }
     .header .menu_list ul li a {
         border: none;
@@ -520,11 +527,6 @@ p {
         width: auto;
         height: 91px;
     }
-    /* #conteneur_menu .hamburger,
-    .hamburger-box,
-    .hamburger-inner {
-        border-color: transparent;
-    } */
 }
 
 @media screen and (max-width: 767.98px)
@@ -533,13 +535,11 @@ p {
 {
     .menu_list .loader {
         position: absolute;
-        left: 95%;
-        top: 25%;
+        left: 90%;
+        top: 10%;
         width: 10px;
         height: 50px;
         border-radius: 50%;
-        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
-        animation: animate 0.5s linear infinite;
     }
     .header .menu_list ul li a {
         border: none;
@@ -548,9 +548,9 @@ p {
         font-size: 1.8em;
         padding: .7rem;
     }
-    /* #conteneur_menu button.hamburger-inner {
-        padding-top: 10%;
-    } */
+    #conteneur_menu .hamburger {
+        margin: 4% 0 0 -5%;
+    }
     .section-title p {
         font-size: 16px;
     }
@@ -611,19 +611,17 @@ p {
     /* ======== Animated loader ========== */
     .menu_list .loader {
         position: absolute;
-        left: 95%;
+        left: 88%;
         top: 20px;
         width: 12px;
         height: 50px;
         border-radius: 50%;
-        background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
-        animation: animate 0.5s linear infinite;
     }
     .header .menu_list ul li a {
         border: none;
     }
     .navbar-nav {
-        margin-left: -20px;
+        margin-left: 6px;
     }
     /* ======== Jumborton ========== */
     .banner {
@@ -639,9 +637,9 @@ p {
         line-height: 45px;
         padding-top: 30px;
     }
-    /* #conteneur_menu button.hamburger-inner {
-        padding-top: 50%;
-    } */
+    #conteneur_menu .hamburger {
+        margin: 5% 0 0 3%;
+    }
     .section-title p {
         font-size: 16px;
     }
@@ -697,7 +695,6 @@ p {
         margin-left: -5%;
     }
     #technology .php {
-        /* margin-left: 10px; */
         height: 100%;
         width: 100%;
         display: flex;
@@ -729,6 +726,14 @@ p {
 }
 
 @media screen and (max-width: 319.98px) {
+    .menu_list .loader {
+        position: absolute;
+        left: 100%;
+        top: 20px;
+        width: 12px;
+        height: 50px;
+        border-radius: 50%;
+    }
     .header .menu_list ul li a {
         border: none;
     }
@@ -760,12 +765,6 @@ p {
         margin-left: 12%;
     }
     /* ======== Technology ======== */
-    #technology .sass {
-        /* margin-left: -12%; */
-    }
-    #technology .wordpress {
-        /* margin-left: -15%; */
-    }
     #technology i {
         font-size: 3rem;
     }
@@ -815,7 +814,6 @@ p {
     }
     #form {
         margin-left: 17%;
-        /* margin-top: 200%; */
         padding-bottom: 30%;
     }
 }
