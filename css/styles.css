@@ -36,11 +36,6 @@ p {
     position: relative;
 }
 
-#conteneur_menu button {
-    padding-top: 10%;
-    outline: none !important;
-}
-
 .header .menu_list ul li a {
     font-weight: bold;
     -webkit-transition: all 1s;
@@ -59,6 +54,15 @@ p {
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: 0 0 0 0;
+}
+
+.navbar-toggler:hover {
+    border: 0;
 }
 
 
@@ -92,11 +96,58 @@ p {
     color: slateblue;
 }
 
+.header-text .nom {
+    color: #fff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    background: #000;
+    filter: brightness(250%);
+}
+
+.header-text .nom::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    mix-blend-mode: difference;
+    filter: blur(5px);
+}
+
+.header-text .nom::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #00ffd0, #d2bbff, #ffd100, #00ffd0);
+    mix-blend-mode: multiply;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
 .header-text h1 {
     font-size: 35px;
     font-weight: 300;
     line-height: 45px;
     padding-top: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .header-text p {
@@ -230,12 +281,6 @@ p {
 
 /* ================ Technology =================== */
 
-
-/* #technology .tech-line {
-    color: #fff;
-    width: calc(100% + 52px);
-} */
-
 #technology .aws {
     display: flex;
     flex-direction: column;
@@ -329,11 +374,6 @@ p {
 
 #projet {
     margin-top: 25%;
-}
-
-#projet .projet-line {
-    color: #fff;
-    width: calc(100% + 52px);
 }
 
 
@@ -439,6 +479,9 @@ p {
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
     }
+    .header .menu_list ul li a {
+        border: none;
+    }
     /* ================ Technology =================== */
     #technology i {
         font-size: 4.5em;
@@ -477,6 +520,11 @@ p {
         width: auto;
         height: 91px;
     }
+    /* #conteneur_menu .hamburger,
+    .hamburger-box,
+    .hamburger-inner {
+        border-color: transparent;
+    } */
 }
 
 @media screen and (max-width: 767.98px)
@@ -493,29 +541,24 @@ p {
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
     }
+    .header .menu_list ul li a {
+        border: none;
+    }
     .social a {
         font-size: 1.8em;
         padding: .7rem;
     }
-    #conteneur_menu button.hamburger-inner {
+    /* #conteneur_menu button.hamburger-inner {
         padding-top: 10%;
-    }
+    } */
     .section-title p {
         font-size: 16px;
-    }
-    #abouts .about-line {
-        color: #fff;
-        width: calc(100% + 52px);
     }
     .section-title h2 {
         font-size: large;
     }
     #abouts h2 {
         font-size: large;
-    }
-    #technology .tech-line {
-        color: #fff;
-        width: calc(100% + 52px);
     }
     #technology i {
         font-size: 3.5em;
@@ -553,10 +596,6 @@ p {
     #projet {
         margin-top: 40%;
     }
-    #projet .projet-line {
-        color: #fff;
-        width: 100%;
-    }
     #projet .card {
         margin-bottom: 10%;
     }
@@ -580,9 +619,15 @@ p {
         background: linear-gradient(#8ca6cc, #D4AF37, blueviolet);
         animation: animate 0.5s linear infinite;
     }
+    .header .menu_list ul li a {
+        border: none;
+    }
+    .navbar-nav {
+        margin-left: -20px;
+    }
     /* ======== Jumborton ========== */
     .banner {
-        margin-left: 6%;
+        margin-left: 15px;
     }
     .social a {
         font-size: 1.8em;
@@ -594,9 +639,9 @@ p {
         line-height: 45px;
         padding-top: 30px;
     }
-    #conteneur_menu button.hamburger-inner {
-        padding-top: 10%;
-    }
+    /* #conteneur_menu button.hamburger-inner {
+        padding-top: 50%;
+    } */
     .section-title p {
         font-size: 16px;
     }
@@ -625,28 +670,46 @@ p {
         margin-top: 7px;
         height: 100%;
         width: 100%;
-        margin-left: -10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
     }
     #technology .aws img {
-        max-width: 200px;
+        max-width: 100px;
         width: auto;
-        height: 65px;
+        height: 55px;
     }
     #technology .mysql {
-        margin-left: 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     #technology .mysql img {
         max-width: 80px;
         width: auto;
-        height: 100px;
+        height: 70px;
+    }
+    #technology .sass {
+        margin-left: -5%;
+    }
+    #technology .wordpress {
+        margin-left: -5%;
     }
     #technology .php {
-        margin-left: 10px;
+        /* margin-left: 10px; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     #technology .php img {
         max-width: 65px;
         width: auto;
         height: 45px;
+    }
+    #technology .laravel {
+        font-size: 1em;
     }
     /* ======== Projet ========== */
     #projet {
@@ -660,12 +723,15 @@ p {
         margin-bottom: 10%;
     }
     #form {
-        margin: 80% 0 20% 7%;
+        margin: 12% 0 20% 7%;
         padding-bottom: 30%;
     }
 }
 
 @media screen and (max-width: 319.98px) {
+    .header .menu_list ul li a {
+        border: none;
+    }
     /* ======== Jumborton ======== */
     .banner {
         margin-left: 8%;
@@ -695,10 +761,10 @@ p {
     }
     /* ======== Technology ======== */
     #technology .sass {
-        margin-left: -12%;
+        /* margin-left: -12%; */
     }
     #technology .wordpress {
-        margin-left: -15%;
+        /* margin-left: -15%; */
     }
     #technology i {
         font-size: 3rem;
@@ -706,23 +772,34 @@ p {
     #technology .aws {
         height: 100%;
         width: 100%;
+        display: flex;
+        justify-content: center;
         margin-top: -2px;
-        margin-left: 40px;
+        margin-left: 30px;
+    }
+    #technology .aws img {
+        max-width: 100px;
+        width: auto;
+        height: 50px;
     }
     #technology .php {
         height: 100%;
         width: 100%;
-        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        margin-left: 35px;
     }
     #technology .php img {
-        max-width: 65px;
+        max-width: 60px;
         width: auto;
         height: 40px;
     }
     #technology .mysql {
         height: 100%;
         width: 100%;
-        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        margin-left: 35px;
     }
     #technology .mysql img {
         max-width: 80px;
@@ -736,13 +813,9 @@ p {
     #projet h3 {
         font-size: 20px;
     }
-    #projet .projet-line {
-        color: #fff;
-        width: 100%;
-    }
     #form {
         margin-left: 17%;
-        margin-top: 200%;
+        /* margin-top: 200%; */
         padding-bottom: 30%;
     }
 }
