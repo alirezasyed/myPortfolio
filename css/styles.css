@@ -267,6 +267,10 @@ p {
 
 /* ================ About =================== */
 
+#abouts {
+    margin-top: 8rem;
+}
+
 #abouts .about-line {
     color: #fff;
     width: calc(100% + 52px);
