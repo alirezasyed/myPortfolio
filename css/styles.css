@@ -49,11 +49,11 @@ p {
     background: blueviolet;
     color: #fff;
     border: 0;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
 }
 
 .navbar-toggler:focus {
@@ -314,6 +314,19 @@ p {
 #technology .mysql {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#technology .linux img {
+    max-width: 120px;
+    width: auto;
+    height: 85px;
+}
+
+#technology .linux {
+    display: flex;
+    /* flex-direction: x; */
     justify-content: center;
     height: 100%;
 }
