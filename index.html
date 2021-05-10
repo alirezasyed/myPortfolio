@@ -521,21 +521,23 @@
 
             </div>
 
-            <form action="index.html" method="POST" role="form">
+            <form name="contact" action="index.html" method="POST" data-netlify="true">
 
                 <div class="row">
 
                     <div class="col-md-4">
+
                         <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom complet">
                         <input type="number" class="form-control" id="numero" name="numero" placeholder="Numéro">
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+
                     </div>
 
                     <div class="col-md-8">
 
-                        <textarea name="" id="message" cols="30" rows="25" class="form-control" col="10" placeholder="Message Text"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="25" class="form-control" col="10" placeholder="Message Text"></textarea>
 
-                        <button type="button" class="btn btn-outline-secondary submit-btn form-submit text-white">SEND</button>
+                        <button type="submit" class="btn btn-outline-secondary submit-btn form-submit text-white">SEND</button>
 
                     </div>
 
