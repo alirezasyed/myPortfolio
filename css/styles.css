@@ -18,6 +18,30 @@ body {
     height: 100vh;
 }
 
+.scrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #fff url("../images/up.png");
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
 p {
     font-size: 14px;
 }
@@ -46,7 +70,7 @@ p {
 }
 
 .header .menu_list ul li a:hover {
-    background: blueviolet;
+    background: #32599c;
     color: #fff;
     border: 0;
     -webkit-transition: all 2s;
@@ -93,7 +117,7 @@ p {
 .fa-github:hover,
 .fa-instagram:hover,
 .fa-linkedin:hover {
-    color: slateblue;
+    color: #32599c;
 }
 
 .header-text .nom {
@@ -171,9 +195,9 @@ p {
 }
 
 .btn-projet:hover {
-    background: blueviolet;
+    background: #32599c;
     color: #fff;
-    border-color: blueviolet;
+    border-color: #32599c;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -393,11 +417,21 @@ p {
     margin-top: 25%;
 }
 
+/* #projet .hmtech , .file-explorer {
+    margin-top: 2rem;
+} */
+
+/* #projet .card {
+    max-width: 100%;
+} */
+
+
+
 
 /* ================ Contact Us =================== */
 
 #form {
-    padding-bottom: 5%;
+    padding: 20% 5%;
 }
 
 #form .contact-line {
@@ -467,9 +501,9 @@ p {
 }
 
 .submit-btn:hover {
-    background: blueviolet;
+    background: #173f5f;
     color: #fff;
-    border-color: blueviolet;
+    border-color: #173f5f;
 }
 
 .navbar-nav {
@@ -479,10 +513,14 @@ p {
 
 /* ================ Mobile Media Queries =================== */
 
-@media screen and (min-width: 1200px)
+@media screen and (min-width: 992px)
 /* Laptops */
 
-{}
+{
+    #projet .hmtech , .file-explorer {
+        margin-top: 2rem;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 991.98px)
 /* Tablet portrait */
@@ -543,6 +581,10 @@ p {
         max-width: 162px;
         width: auto;
         height: 91px;
+    }
+
+    #projet .hmtech , .file-explorer {
+        margin-top: 2rem;
     }
 }
 
@@ -616,8 +658,9 @@ p {
     #projet .card {
         margin-bottom: 10%;
     }
+    
     #form {
-        padding: 150% 0px 200px 0;
+        padding: 60% 0px 200px 0;
     }
 }
 
@@ -676,7 +719,7 @@ p {
     }
     /* ======== Technology ========== */
     #technology {
-        margin-left: 4%;
+        /* margin-left: 2%; */
     }
     #technology i {
         font-size: 3rem;
@@ -727,18 +770,15 @@ p {
     }
     /* ======== Projet ========== */
     #projet {
-        margin: 100% 0 0 7%;
+        margin: 100% 0 0 4%;
     }
-    #projet .projet-line {
-        color: #fff;
-        width: 100%;
-    }
-    #projet .card {
-        margin-bottom: 10%;
+    
+    #form {
+        margin: 80% 0 20% 7%;
+        padding: 175% 0px 30% 0;
     }
     #form {
-        margin: 12% 0 20% 7%;
-        padding-bottom: 30%;
+        
     }
 }
 

@@ -2,6 +2,8 @@ $(document).scroll(function() {
     $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
 });
 
+// particles
+
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -150,3 +152,31 @@ window.addEventListener('mouseout',
 
 init();
 animate();
+
+
+
+// up arrow
+
+window.addEventListener('scroll', function() {
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", window.scrollY > 2800)
+})
+
+
+
+
+// form
+
+document.querySelector("form").addEventListener("submit", handleSubmit);
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('pizzaOrder');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
