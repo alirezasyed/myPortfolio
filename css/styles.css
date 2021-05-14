@@ -316,6 +316,10 @@ p {
     height: 100%;
 }
 
+#technology .aws:hover {
+    animation: ro 2s linear infinite;
+}
+
 #technology .aws img {
     max-width: 162px;
     width: auto;
@@ -327,6 +331,10 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+}
+
+#technology .php:hover {
+    animation: ro 2s linear infinite;
 }
 
 #technology .php img {
@@ -342,6 +350,10 @@ p {
     height: 100%;
 }
 
+#technology .mysql:hover {
+    animation: ro 2s linear infinite;
+}
+
 #technology .linux img {
     max-width: 120px;
     width: auto;
@@ -350,9 +362,14 @@ p {
 
 #technology .linux {
     display: flex;
-    /* flex-direction: x; */
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+#technology .linux:hover {
+    animation: ro 2s linear infinite;
 }
 
 #technology .mysql img {
@@ -363,6 +380,21 @@ p {
 
 #technology i {
     margin: 40px;
+}
+
+#technology i:hover {
+    animation: ro 2s linear infinite;
+}
+
+@keyframes ro {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        
+    }
 }
 
 #technology .width img {
@@ -399,6 +431,10 @@ p {
 
 #technology .fa-laravel {
     color: #fb503b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #technology .fa-js-square {
@@ -583,6 +619,12 @@ p {
         height: 91px;
     }
 
+    #technology .linux img {
+        max-width: 80px;
+        width: auto;
+        height: 70px;
+    }
+
     #projet .hmtech , .file-explorer {
         margin-top: 2rem;
     }
@@ -652,6 +694,13 @@ p {
         width: auto;
         height: 85px;
     }
+
+    #technology .linux img {
+        max-width: 80px;
+        width: auto;
+        height: 60px;
+    }
+
     #projet {
         margin-top: 40%;
     }
@@ -765,9 +814,17 @@ p {
         width: auto;
         height: 45px;
     }
+
+    #technology .linux img {
+        max-width: 80px;
+        width: auto;
+        height: 50px;
+    }
+
     #technology .laravel {
         font-size: 1em;
     }
+    
     /* ======== Projet ========== */
     #projet {
         margin: 100% 0 0 4%;
