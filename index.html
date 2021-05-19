@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -20,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     <link href="css/hamburgers.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
@@ -29,7 +32,7 @@
 
 <body>
 
-    <div class="scrollTop"></div>
+    <div><a href="#home" class="scrollTop"></a></div>
 
     <!-- Header -->
     <header id="home" class="header">
@@ -38,76 +41,52 @@
 
             <div class="row">
 
-                <!-- le Button de Burger -->
                 <div class="col-md-6">
+                       
+                        <div class="menu-toggler">
+                            <div class="bar half start"></div>
+                            <div class="bar"></div>
+                            <div class="bar half end"></div>
+                        </div>
+                  
+                    <nav class="top-nav mt-4">
 
-                    <div id="conteneur_menu">
-
-                        <button class="hamburger hamburger--emphatic navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                        </button>
-
-                    </div>
-
+                            <ul class="nav-list list-unstyled">
+                                <li>
+                                    <a href="#home" tabindex="1" class="nav-link btn btn-outline-secondary border-white py-3 px-4 m-2">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#abouts" class="nav-link btn btn-outline-secondary border-white py-3 px-4 m-2">About</a>
+                                </li>
+                                <li>
+                                    <a href="#technology" class="nav-link btn btn-outline-secondary border-white py-3 px-4 m-2">Technologies</a>
+                                </li>
+                                <li>
+                                    <a href="#projet" class="nav-link btn btn-outline-secondary border-white py-3 px-4 m-2">Projet</a>
+                                </li>
+                                <li>
+                                    <a href="#form" class="nav-link btn btn-outline-secondary border-white py-3 px-4 m-2">Contact</a>
+                                </li>
+                            </ul>
+                    </nav>
                 </div>
 
-                <!-- menu  -->
-                <div class="menu_list">
 
-                    <div class="d-flex flex-row">
 
-                        <div class="col-md-6">
+                <div class="col-md-6 menu_list">
+                    <div class="loader mt-2">
 
-                            <nav id="menu" class="navbar navbar-expand-lg navbar-light mt-2 ">
-
-                                <div class="collapse navbar-collapse" id="navContent">
-
-                                    <ul class="navbar-nav ml-auto text-uppercase">
-
-                                        <li>
-                                            <a href="#home" tabindex="1" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#abouts" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="#technology" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Technologies</a>
-                                        </li>
-                                        <li>
-                                            <a href="#projet" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Projet</a>
-                                        </li>
-                                        <li>
-                                            <a href="#form" class="btn btn-outline-secondary border-white py-3 px-4 m-2 text-white">Contact</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </nav>
-
-                        </div>
-
-                        <div class="loader mt-2">
-
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-
-                        </div>
-
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
 
                     </div>
-
                 </div>
 
             </div>
 
         </div>
-        <!-- <hr> -->
 
     </header>
 
@@ -302,7 +281,7 @@
 
                     <div class="php">
 
-                        <img src="images/new-php-logo.svg" class="img-fluid" alt="">
+                        <img src="images/new-php-logo.svg" class="img-fluid" alt="php">
 
                     </div>
 
@@ -312,7 +291,7 @@
 
                     <div class="mysql">
 
-                        <img src="images/mysql.svg" alt="">
+                        <img src="images/mysql.svg" alt="mysql">
 
                     </div>
 
@@ -441,7 +420,7 @@
 
                         <div class="card">
 
-                            <img src="images/files-explorer.png" class="card-img-top" alt="filesExplorer">
+                            <img src="images/hmtech.png" class="card-img-top" alt="Hmtech">
 
                             <div class="card-body d-flex flex-column align-content-around">
                                 <h5 class="card-title">Files Explorer</h5>
@@ -453,7 +432,7 @@
                     </div>
 
 
-                    <div class="col-sm-6 mx-auto col-md-4">
+                    <!-- <div class="col-sm-6 mx-auto col-md-4">
 
                         <div class="card hmtech">
 
@@ -466,23 +445,23 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
 
-                    <div class="col-sm-6 mx-auto col-md-4">
+                    <!-- <div class="col-sm-6 mx-auto col-md-4">
 
-                        <div class="card file-explorer">
+                        <div class="card">
 
-                            <img src="" class="card-img-top" alt="matrix">
+                            <img src="" class="card-img-top" alt="">
 
                             <div class="card-body d-flex flex-column align-content-around">
-                                <h5 class="card-title">Matrix Coming Soon</h5>
+                                <h5 class="card-title"></h5>
                                 <a href="#" class="btn btn-outline-secondary">Let's Click</a>
                             </div>
 
                         </div>
 
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -545,38 +524,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
+        AOS.init();
         new WOW().init();
-
-
-        $(document).ready(function() {
-            $('.hamburger').click(function() {
-                if (!$('#navContent').hasClass('collapsing')) {
-                    $(this).toggleClass('is-active');
-                }
-            });
-
-            $(document).click(function(e) {
-                let el = $(e.target);
-
-                if (el.parents('li.has-child')) {
-                    $('#menu ul li.has-child').removeClass('open');
-                    el.parents('li.has-child').addClass('open');
-                } else {
-                    $('#menu ul li.has-child').removeClass('open');
-                }
-
-                if (el.is('a') && el.parent().hasClass('has-child')) {
-                    if (!el.hasClass('open')) {
-                        e.preventDefault();
-                        el.addClass('open')
-                    }
-                } else {
-                    $('#menu a.open').removeClass('open');
-                }
-            })
-        });
     </script>
 
 </body>

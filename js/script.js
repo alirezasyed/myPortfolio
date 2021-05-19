@@ -1,6 +1,18 @@
-$(document).scroll(function() {
-    $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+// burger menu
+
+$(document).ready(function() {
+    $('.menu-toggler').on('click', function () {
+        $(this).toggleClass('open');
+        $('.top-nav').toggleClass('open');
+    });
+
+    $('.top-nav .nav-link').on('click', function () {
+        $('.menu-toggler').removeClass('open');
+        $('.top-nav').removeClass('open');
+    });
 });
+
+
 
 // particles
 
@@ -155,28 +167,5 @@ animate();
 
 
 
-// up arrow
-
-window.addEventListener('scroll', function() {
-    var scroll = document.querySelector('.scrollTop');
-    scroll.classList.toggle("active", window.scrollY > 2800)
-})
 
 
-
-
-// form
-
-document.querySelector("form").addEventListener("submit", handleSubmit);
-
-const handleSubmit = (e) => {
-  e.preventDefault()
-  let myForm = document.getElementById('pizzaOrder');
-  let formData = new FormData(myForm)
-  fetch('/', {
-    method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
-}
