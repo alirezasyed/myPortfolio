@@ -921,9 +921,9 @@ p {
   .header .menu_list ul li a {
     border: none;
   }
-  .navbar-nav {
+  /* .navbar-nav {
     margin-left: 6px;
-  }
+  } */
   /* ======== Jumborton ========== */
   .banner {
     margin-left: 15px;
@@ -956,11 +956,11 @@ p {
     margin-left: 17%;
   }
   #abouts .about-image {
-    margin-left: 5%;
+    margin-left: 2%;
   }
   /* ======== Technology ========== */
   #technology {
-    /* margin-left: 2%; */
+    /* margin-left: 10%; */
   }
   #technology i {
     font-size: 3rem;
