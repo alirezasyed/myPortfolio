@@ -1,5 +1,3 @@
-// burger menu
-
 $(document).ready(function() {
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
@@ -165,6 +163,14 @@ window.addEventListener('mouseout',
 init();
 animate();
 
+
+
+// up arrow
+
+window.addEventListener('scroll', function() {
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", window.scrollY > 2800)
+})
 
 
 
