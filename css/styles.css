@@ -460,9 +460,20 @@ p {
     margin-top: 2rem;
 } */
 
-/* #projet .card {
-    max-width: 100%;
-} */
+
+#projet .card-body a:hover {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background: #32599c;
+}
+
+#projet .card-body .git {
+    float: right;
+}
+
 
 /* ================ Contact Us =================== */
 
