@@ -75,14 +75,22 @@ p {
 
 .header .top-nav ul li a:hover {
   /* background: #32599c; */
-    color: #fdfeff;
-    border: 0;
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -ms-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
+  color: #fdfeff;
+  border: 0;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
   background: none;
+}
+
+.header .top-nav ul li .about {
+  width: 109px;
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar-toggler:focus {
@@ -460,7 +468,6 @@ p {
     margin-top: 2rem;
 } */
 
-
 #projet .card-body a:hover {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -471,9 +478,8 @@ p {
 }
 
 #projet .card-body .git {
-    float: right;
+  float: right;
 }
-
 
 /* ================ Contact Us =================== */
 
@@ -643,9 +649,6 @@ p {
     transform: rotate(-45deg);
   }
 
-
-
-
   .bar {
     background: #000;
     width: 49px;
@@ -674,6 +677,11 @@ p {
 
   .open .bar.end {
     transform: rotate(-450deg) translateX(-11px);
+  }
+
+  .header .top-nav ul li .about {
+    width: 0;
+    height: 0;
   }
 
   /* ================ Animated logo =================== */
