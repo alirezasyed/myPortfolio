@@ -1063,9 +1063,9 @@ input[type="number"] {
         font-size: 13px;
     }
     /* ======== About ======== */
-    #abouts .about-image {
+    /* #abouts .about-image {
         margin-left: 13%;
-    }
+    } */
     #abouts .about-line {
         color: #fff;
         width: calc(100% + 52px);
