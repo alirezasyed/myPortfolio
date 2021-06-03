@@ -604,8 +604,7 @@ input[type="number"] {
 /* Tablet portrait */
 
 {
-     /* ======== burger menu ========== */
-
+    /* ======== burger menu ========== */
     .top-nav {
         width: 100%;
         height: 100vh;
@@ -637,7 +636,6 @@ input[type="number"] {
         padding: 1rem;
         border: none;
     }
- 
     /* .header .top-nav ul li a:hover {
         background: linear-gradient(to right, #ffa217, #232943);
         -webkit-transition: all 2s;
@@ -720,7 +718,8 @@ input[type="number"] {
         margin-top: 7px;
         height: 100%;
         width: 100%;
-        margin-left: 15px;
+        margin-left: -15px;
+        align-items: center;
     }
     #technology .php img {
         max-width: 90px;
@@ -765,8 +764,7 @@ input[type="number"] {
 /* Mobile landscape */
 
 {
-     /* ======== burger menu ========== */
-
+    /* ======== burger menu ========== */
     .top-nav {
         width: 100%;
         height: 95vh;
@@ -852,8 +850,7 @@ input[type="number"] {
     .open .bar.end {
         transform: rotate(-450deg) translateX(-11px);
     }
-     /* ======== loader ========== */
-
+    /* ======== loader ========== */
     .menu_list .loader {
         position: absolute;
         left: 90%;
@@ -862,8 +859,7 @@ input[type="number"] {
         height: 50px;
         border-radius: 50%;
     }
-     /* ======== header ========== */
-    
+    /* ======== header ========== */
     .header .menu_list ul li a {
         border: none;
     }
@@ -879,12 +875,12 @@ input[type="number"] {
     #abouts h2 {
         font-size: large;
     }
-     /* ======== technology ========== */
+    /* ======== technology ========== */
     #technology i {
         font-size: 3.5em;
     }
     #technology .php {
-        margin-left: 30px;
+        margin-left: 26px;
     }
     #technology .php img {
         max-width: 80px;
@@ -898,7 +894,8 @@ input[type="number"] {
         height: 100%;
     }
     #technology .mysql {
-        margin-left: 30px;
+        display: flex;
+        align-items: center;
     }
     #technology .mysql img {
         max-width: 100px;
@@ -919,13 +916,16 @@ input[type="number"] {
         height: 60px;
     }
     #projet {
-        margin-top: 40%;
+        margin-top: 55%;
     }
     #projet h3 {
         font-size: large;
     }
     #projet .card {
         margin-bottom: 10%;
+    }
+    #projet .card h5 {
+        font-size: large;
     }
     #form {
         padding: 60% 0px 200px 0;
@@ -951,7 +951,6 @@ input[type="number"] {
     .header .menu_list ul li a {
         border: none;
     }
-
     /* ======== Jumborton ========== */
     .banner a {
         padding: 10px 16px 10px 16px;
@@ -982,6 +981,8 @@ input[type="number"] {
     /* ======== Technology ========== */
     #technology i {
         font-size: 3rem;
+        display: flex;
+        justify-content: center;
     }
     #technology .aws {
         margin-top: 7px;
@@ -989,10 +990,10 @@ input[type="number"] {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-left: 15px;
+        margin-left: 5px;
     }
     #technology .aws img {
-        max-width: 100px;
+        max-width: 133px;
         width: auto;
         height: 55px;
     }
@@ -1000,7 +1001,7 @@ input[type="number"] {
         height: 100%;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
     #technology .mysql img {
         max-width: 80px;
@@ -1008,7 +1009,7 @@ input[type="number"] {
         height: 70px;
     }
     #technology .sass {
-        margin-left: -5%;
+        margin-left: 9%;
     }
     #technology .wordpress {
         margin-left: -5%;
@@ -1017,7 +1018,8 @@ input[type="number"] {
         height: 100%;
         width: 100%;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        margin-left: 8px;
     }
     #technology .php img {
         max-width: 65px;
@@ -1037,8 +1039,7 @@ input[type="number"] {
         margin: 100% 0 0 0;
     }
     #form {
-        margin: 80% 0 20% 0%;
-        padding: 70% 0px 30% 0;
+        margin: 200% 0 20% 0%;
     }
 }
 
@@ -1056,7 +1057,6 @@ input[type="number"] {
     }
     /* ======== Jumborton ======== */
     .banner {
-
         text-align: center;
     }
     .banner .header-text p {
@@ -1071,8 +1071,7 @@ input[type="number"] {
         width: calc(100% + 52px);
     }
     .section-title h2 {
-        font-size: 18px;
-        margin-left: 12%;
+        font-size: large;
     }
     /* ======== Technology ======== */
     #technology i {
@@ -1084,7 +1083,7 @@ input[type="number"] {
         display: flex;
         justify-content: center;
         margin-top: -2px;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     #technology .aws img {
         max-width: 100px;
@@ -1096,7 +1095,6 @@ input[type="number"] {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-left: 35px;
     }
     #technology .php img {
         max-width: 60px;
@@ -1108,22 +1106,15 @@ input[type="number"] {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-left: 35px;
+        margin-left: 10px;
     }
     #technology .mysql img {
-        max-width: 80px;
+        max-width: 65px;
         width: auto;
         height: 110px;
     }
     /* ======== Projet ======== */
-    #projet {
-        margin-left: 17%;
-    }
     #projet h3 {
         font-size: 20px;
-    }
-    #form {
-        margin-left: 17%;
-        padding-bottom: 30%;
     }
 }
