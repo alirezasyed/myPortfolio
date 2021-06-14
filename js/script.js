@@ -171,9 +171,5 @@ window.addEventListener('scroll', function() {
 
 
 
-// up arrow
-
-
-
 
 

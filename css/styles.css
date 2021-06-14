@@ -1,642 +1,616 @@
 @font-face {
-    font-family: thehistoriademo;
-    src: url(../webfonts/TheHistoriaDemo.ttf);
+  font-family: thehistoriademo;
+  src: url(../webfonts/TheHistoriaDemo.ttf);
 }
-
 
 /* ================ Main =================== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-image: url("../images/bg.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    height: 100vh;
+  font-family: "Raleway", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: url("../images/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100vh;
 }
 
 .scrollTop {
-    position: fixed;
-    bottom: 800px;
-    right: 40px;
-    width: 60px;
-    height: 60px;
-    background: #fff url("../images/up.png");
-    border-radius: 50%;
-    background-size: 40px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    z-index: 100000;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+  position: fixed;
+  bottom: 800px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: #fff url("../images/up.png");
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .scrollTop.active {
-    bottom: 40px;
-    visibility: visible;
-    opacity: 1;
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-
-/* #canvas1 {
-    position: fixed;
-    width: 100%;
+#canvas1 {
+  position: fixed;
+  width: 100%;
   height: 100%;
-    z-index: -10;
-} */
-
+  z-index: -10;
+}
 
 /* ================ Menu =================== */
 
 .header {
-    position: relative;
+  position: relative;
 }
 
 .header .top-nav ul li a {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    color: #ffffff;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  color: #ffffff;
 }
 
 .header .top-nav ul li a:hover {
-    /* background: #32599c; */
-    color: #fdfeff;
-    border: 0;
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -ms-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
-    background: none;
+  /* background: #32599c; */
+  color: #fdfeff;
+  border: 0;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  background: none;
 }
 
 .header .top-nav ul li .about {
-    display: flex;
+  display: flex;
 }
 
 .header .top-nav ul li .about span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .navbar-toggler:focus {
-    text-decoration: none;
-    box-shadow: 0 0 0 0;
+  text-decoration: none;
+  box-shadow: 0 0 0 0;
 }
 
 .navbar-toggler:hover {
-    border: 0;
+  border: 0;
 }
 
 .nav-list {
-    display: flex;
+  display: flex;
 }
-
 
 /* ================ Jumborton =================== */
 
 .banner {
-    position: relative;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social a {
-    font-size: 2em;
-    padding: 2rem;
+  font-size: 2em;
+  padding: 2rem;
 }
 
 .social .fa-instagram {
-    color: #0e76a8;
+  color: #0e76a8;
 }
 
 .social .fa-github {
-    color: #333;
+  color: #333;
 }
 
 .fa-github:hover,
 .fa-instagram:hover,
 .fa-linkedin:hover {
-    color: #32599c;
+  color: #32599c;
 }
 
 .header-text .nom {
-    color: #fff;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    display: inline-block;
-    position: relative;
-    background: #000;
-    filter: brightness(250%);
+  color: #fff;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  position: relative;
+  background: #000;
+  filter: brightness(250%);
 }
 
 .header-text .nom::before {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    right: 0;
-    mix-blend-mode: difference;
-    filter: blur(5px);
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  mix-blend-mode: difference;
+  filter: blur(5px);
 }
 
 .header-text .nom::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(90deg, #00ffd0, #d2bbff, #ffd100, #00ffd0);
-    mix-blend-mode: multiply;
-    animation-name: move;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #00ffd0, #d2bbff, #ffd100, #00ffd0);
+  mix-blend-mode: multiply;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
 }
 
 @keyframes move {
-    0% {
-        background-position-x: 0px;
-    }
-    100% {
-        background-position-x: 1000px;
-    }
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
 }
 
 .header-text h1 {
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 45px;
-    padding-top: 30px;
-    margin: 0;
-    padding: 0;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 45px;
+  padding-top: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-text p {
-    color: #fff;
-    font-size: 17px;
-    line-height: 28px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 .btn-projet,
 .btn-projet:focus,
 .btn-projet:active,
 .btn-projet:visited {
-    padding: 10px 30px;
-    font-size: 19px;
-    border-radius: 3px;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  padding: 10px 30px;
+  font-size: 19px;
+  border-radius: 3px;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .btn-projet:hover {
-    background: #32599c;
-    color: #fff;
-    border-color: #32599c;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  background: #32599c;
+  color: #fff;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .header-img img {
-    border: 1px solid #fff;
-    width: 100%;
+  border: 1px solid #fff;
+  width: 100%;
 }
-
 
 /* ================ Scroll bar =================== */
 
 ::-webkit-scrollbar {
-    width: 25px;
+  width: 25px;
 }
 
 ::-webkit-scrollbar-track {
-    border: 8px solid #232943;
-    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border: 8px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #173f5f;
-    border-radius: 10px;
+  background-color: #173f5f;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
-
 
 /* ================ Animated logo =================== */
 
 .menu_list .loader {
-    position: relative;
-    left: 90%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(#8ca6cc, #d4af37, blueviolet);
-    animation: animate 0.5s linear infinite;
+  position: relative;
+  left: 90%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(#8ca6cc, #d4af37, blueviolet);
+  animation: animate 0.5s linear infinite;
 }
 
 @keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .menu_list .loader span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: linear-gradient(#3b5170, #cab779, rgb(67, 14, 116));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(#3b5170, #cab779, rgb(67, 14, 116));
 }
 
 .menu_list .loader span:nth-child(1) {
-    filter: blur(5px);
+  filter: blur(5px);
 }
 
 .menu_list .loader span:nth-child(2) {
-    filter: blur(10px);
+  filter: blur(10px);
 }
 
 .menu_list .loader span:nth-child(3) {
-    filter: blur(25px);
+  filter: blur(25px);
 }
 
 .menu_list .loader span:nth-child(2) {
-    filter: blur(50px);
+  filter: blur(50px);
 }
 
 .menu_list .loader:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: #240229;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #240229;
+  border-radius: 50%;
 }
-
 
 /* ================ About =================== */
 
 #abouts {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 #abouts .about-line {
-    color: #fff;
-    width: calc(100% + 52px);
+  color: #fff;
+  width: calc(100% + 52px);
 }
 
 .about-me .about-image {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
 }
-
 
 /* ================ Technology =================== */
 
 #technology .aws {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 #technology .aws:hover {
-    animation: ro 2s linear infinite;
+  animation: ro 2s linear infinite;
 }
 
 #technology .aws img {
-    max-width: 162px;
-    width: auto;
-    height: 96px;
+  max-width: 162px;
+  width: auto;
+  height: 96px;
 }
 
 #technology .php {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 #technology .php:hover {
-    animation: ro 2s linear infinite;
+  animation: ro 2s linear infinite;
 }
 
 #technology .php img {
-    max-width: 120px;
-    width: auto;
-    height: 85px;
+  max-width: 120px;
+  width: auto;
+  height: 85px;
 }
 
 #technology .mysql {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 #technology .mysql:hover {
-    animation: ro 2s linear infinite;
+  animation: ro 2s linear infinite;
 }
 
 #technology .linux img {
-    max-width: 120px;
-    width: auto;
-    height: 85px;
+  max-width: 120px;
+  width: auto;
+  height: 85px;
 }
 
 #technology .linux {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #technology .linux:hover {
-    animation: ro 2s linear infinite;
+  animation: ro 2s linear infinite;
 }
 
 #technology .mysql img {
-    max-width: 150px;
-    width: auto;
-    height: 124px;
+  max-width: 150px;
+  width: auto;
+  height: 124px;
 }
 
 #technology i {
-    margin: 40px;
+  margin: 40px;
 }
 
 #technology i:hover {
-    animation: ro 2s linear infinite;
+  animation: ro 2s linear infinite;
 }
 
 @keyframes ro {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #technology .width img {
-    margin: 40px;
+  margin: 40px;
 }
 
 #technology .fa-html5 {
-    color: #e34c26;
+  color: #e34c26;
 }
 
 #technology .fa-css3-alt {
-    color: #264de4;
+  color: #264de4;
 }
 
 #technology .fa-bootstrap {
-    color: #602c50;
+  color: #602c50;
 }
 
 #technology .fa-sass {
-    color: #cd6799;
+  color: #cd6799;
 }
 
 #technology .fa-less {
-    color: #0e76a8;
+  color: #0e76a8;
 }
 
 #technology .fa-wordpress {
-    color: #00749c;
+  color: #00749c;
 }
 
 #technology .fa-symfony {
-    color: #000;
+  color: #000;
 }
 
 #technology .fa-laravel {
-    color: #fb503b;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  color: #fb503b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #technology .fa-js-square {
-    color: #f0db4f;
+  color: #f0db4f;
 }
 
 #technology .fa-react {
-    color: #61dbfb;
+  color: #61dbfb;
 }
 
 #technology .fa-angular {
-    color: #a6120d;
+  color: #a6120d;
 }
 
 #projet {
-    margin-top: 25%;
+  margin-top: 25%;
 }
 
 #projet .card-body a:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    background: #32599c;
-    outline: none;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background: #32599c;
+  outline: none;
 }
 
 #projet .card-body .git {
-    float: right;
+  float: right;
 }
-
 
 /* ================ Contact Us =================== */
 
 #form {
-    padding: 20% 5%;
+  padding: 20% 5%;
 }
 
 #form .contact-line {
-    color: #fff;
-    width: calc(100% + 52px);
+  color: #fff;
+  width: calc(100% + 52px);
 }
 
 .contact-us-form .form-control {
-    display: block;
-    width: 100%;
-    height: 50px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 21px;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid gray;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    opacity: 0.8;
-    outline: 0px !important;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 3px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  outline: 0px !important;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .form-control::placeholder {
-    color: #fff;
-    /* Firefox */
-    opacity: 1;
+  color: #fff;
+  /* Firefox */
+  opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #fff;
+  /* Internet Explorer 10-11 */
+  color: #fff;
 }
 
 .form-control::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #fff;
+  /* Microsoft Edge */
+  color: #fff;
 }
-
 
 /* Chrome, Safari, Edge, Opera */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
-
 
 /* Firefox */
 
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 #message {
-    height: 117px;
-    resize: none;
+  height: 117px;
+  resize: none;
 }
 
 .submit-btn,
 .submit-btn:active,
 .submit-btn:focus,
 .submit-btn:visited {
-    background-color: transparent;
-    border-radius: 1px solid gray;
-    width: 100%;
-    height: 50px;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: black;
-    outline: 0px !important;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  background-color: transparent;
+  border-radius: 1px solid gray;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: black;
+  outline: 0px !important;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .submit-btn:hover {
-    background: #173f5f;
-    color: #fff;
-    border-color: #173f5f;
+  background: #173f5f;
+  color: #fff;
+  border-color: #173f5f;
 }
 
 .navbar-nav {
-    margin-left: -40px;
+  margin-left: -40px;
 }
-
 
 /* ============== mobile menu ================ */
 
-
 /* ================ Mobile Media Queries =================== */
 
-@media screen and (min-width: 992px)
-/* Laptops */
-
-{
-    #projet .hmtech,
-    .file-explorer {
-        margin-top: 2rem;
-    }
+@media screen and (min-width: 992px) /* Laptops */ {
+  #projet .hmtech,
+  .file-explorer {
+    margin-top: 2rem;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px)
-/* Tablet portrait */
-
-{
-    /* ======== burger menu ========== */
-    .top-nav {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: calc(-100vh + -30px);
-        left: 0px;
-        background-color: rgba(105, 86, 32, 0.3);
-        border-bottom-right-radius: 100%;
-        border-bottom-left-radius: 100%;
-        transition: all 650ms cubic-bezier(1, 0, 0, 1);
-        z-index: 1000;
-    }
-    .nav-list {
-        list-style: none;
-        width: 100%;
-        height: 98%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: -7px;
-    }
-    li {
-        margin: 0 2rem;
-    }
-    .nav-link {
-        font-family: thehistoriademo, sans-serif;
-        font-size: 1.5rem;
-        padding: 1rem;
-        border: none;
-    }
-    /* .header .top-nav ul li a:hover {
+@media screen and (min-width: 768px) and (max-width: 991.98px) /* Tablet portrait */ {
+  /* ======== burger menu ========== */
+  .top-nav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: calc(-100vh + -30px);
+    left: 0px;
+    background-color: rgba(105, 86, 32, 0.3);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+    z-index: 1000;
+  }
+  .nav-list {
+    list-style: none;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7px;
+  }
+  li {
+    margin: 0 2rem;
+  }
+  .nav-link {
+    font-family: thehistoriademo, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+  }
+  /* .header .top-nav ul li a:hover {
         background: linear-gradient(to right, #ffa217, #232943);
         -webkit-transition: all 2s;
         -moz-transition: all 2s;
@@ -644,477 +618,471 @@ input[type="number"] {
         -o-transition: all 2s;
         transition: all 2s;
     } */
-    .top-nav.open {
-        top: -25px;
-        border-radius: initial;
-    }
-    .menu-toggler {
-        position: absolute;
-        top: 1.5rem;
-        left: 2rem;
-        width: 3rem;
-        height: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        z-index: 1500;
-        transition: transform 650ms ease-out;
-    }
-    .menu-toggler.open {
-        transform: rotate(-45deg);
-    }
-    .bar {
-        background: #000;
-        width: 49px;
-        height: 4px;
-        border-radius: 0.8rem;
-    }
-    .bar.half {
-        width: 24px;
-    }
-    .bar.start {
-        transform-origin: right;
-        transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-    }
-    .open .bar.start {
-        transform: rotate(-450deg) translateX(11px);
-    }
-    .bar.end {
-        align-self: flex-end;
-        transform-origin: left;
-        transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-    }
-    .open .bar.end {
-        transform: rotate(-450deg) translateX(-11px);
-    }
-    /* .header .top-nav ul li .about {
+  .top-nav.open {
+    top: -25px;
+    border-radius: initial;
+  }
+  .menu-toggler {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+  }
+  .menu-toggler.open {
+    transform: rotate(-45deg);
+  }
+  .bar {
+    background: #000;
+    width: 49px;
+    height: 4px;
+    border-radius: 0.8rem;
+  }
+  .bar.half {
+    width: 24px;
+  }
+  .bar.start {
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+  .open .bar.start {
+    transform: rotate(-450deg) translateX(11px);
+  }
+  .bar.end {
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+  .open .bar.end {
+    transform: rotate(-450deg) translateX(-11px);
+  }
+  /* .header .top-nav ul li .about {
         width: 0;
         height: 0;
     } */
-    /* ================ Animated logo =================== */
-    .menu_list .loader {
-        position: absolute;
-        top: 10%;
-        left: 85%;
-        bottom: 15%;
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
-        background: linear-gradient(#8ca6cc, #d4af37, blueviolet);
-        animation: animate 0.5s linear infinite;
-    }
-    #conteneur_menu .hamburger {
-        margin: 4% 0 0 -5%;
-    }
-    .header .menu_list ul li a {
-        border: none;
-    }
-    /* ================ Technology =================== */
-    #technology i {
-        font-size: 4.5em;
-    }
-    #technology .php {
-        margin-top: 7px;
-        height: 100%;
-        width: 100%;
-        margin-left: -15px;
-        align-items: center;
-    }
-    #technology .php img {
-        max-width: 90px;
-        width: auto;
-        height: 60px;
-    }
-    #projet {
-        margin-top: 40%;
-    }
-    #technology .aws {
-        margin-top: 7px;
-        height: 100%;
-        width: 100%;
-    }
-    #technology .aws img {
-        max-width: 164px;
-        width: auto;
-        height: 76px;
-    }
-    #technology .mysql {
-        margin-top: 7px;
-        height: 100%;
-        width: 100%;
-    }
-    #technology .mysql img {
-        max-width: 162px;
-        width: auto;
-        height: 91px;
-    }
-    #technology .linux img {
-        max-width: 80px;
-        width: auto;
-        height: 70px;
-    }
-    #projet .hmtech,
-    .file-explorer {
-        margin-top: 2rem;
-    }
+  /* ================ Animated logo =================== */
+  .menu_list .loader {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    bottom: 15%;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: linear-gradient(#8ca6cc, #d4af37, blueviolet);
+    animation: animate 0.5s linear infinite;
+  }
+  #conteneur_menu .hamburger {
+    margin: 4% 0 0 -5%;
+  }
+  .header .menu_list ul li a {
+    border: none;
+  }
+  /* ================ Technology =================== */
+  #technology i {
+    font-size: 4.5em;
+  }
+  #technology .php {
+    margin-top: 7px;
+    height: 100%;
+    width: 100%;
+    margin-left: -15px;
+    align-items: center;
+  }
+  #technology .php img {
+    max-width: 90px;
+    width: auto;
+    height: 60px;
+  }
+  #projet {
+    margin-top: 40%;
+  }
+  #technology .aws {
+    margin-top: 7px;
+    height: 100%;
+    width: 100%;
+  }
+  #technology .aws img {
+    max-width: 164px;
+    width: auto;
+    height: 76px;
+  }
+  #technology .mysql {
+    margin-top: 7px;
+    height: 100%;
+    width: 100%;
+  }
+  #technology .mysql img {
+    max-width: 162px;
+    width: auto;
+    height: 91px;
+  }
+  #technology .linux img {
+    max-width: 80px;
+    width: auto;
+    height: 70px;
+  }
+  #projet .hmtech,
+  .file-explorer {
+    margin-top: 2rem;
+  }
 }
 
-@media screen and (max-width: 767.98px)
-/* Mobile landscape */
-
-{
-    /* ======== burger menu ========== */
-    .top-nav {
-        width: 100%;
-        height: 95vh;
-        position: fixed;
-        top: calc(-100vh + -30px);
-        left: 0px;
-        background-color: rgba(105, 86, 32, 0.3);
-        border-bottom-right-radius: 100%;
-        border-bottom-left-radius: 100%;
-        transition: all 650ms cubic-bezier(1, 0, 0, 1);
-        z-index: 1000;
-    }
-    .nav-list {
-        list-style: none;
-        width: 100%;
-        height: 98%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: -7px;
-    }
-    li {
-        margin: 0 2rem;
-    }
-    .nav-link {
-        font-size: 1.5rem;
-        padding: 1rem;
-        border: none;
-    }
-    .nav-link {
-        font-family: thehistoriademo, sans-serif;
-        font-size: 1rem;
-        padding: 1rem;
-        border: none;
-    }
-    .nav-link:hover,
-    .nav-link:focus {
-        background: linear-gradient(to top, #ffe838, #fd57bf);
-        -webkit-background-clip: text;
-    }
-    .top-nav.open {
-        top: -25px;
-        border-radius: initial;
-    }
-    .menu-toggler {
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-        width: 3rem;
-        height: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        z-index: 1500;
-        transition: transform 650ms ease-out;
-    }
-    .menu-toggler.open {
-        transform: rotate(-48deg);
-    }
-    .bar {
-        background: #000;
-        width: 49px;
-        height: 4px;
-        border-radius: 0.8rem;
-    }
-    .bar.half {
-        width: 24px;
-    }
-    .bar.start {
-        transform-origin: right;
-        transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-    }
-    .open .bar.start {
-        transform: rotate(-450deg) translateX(11px);
-    }
-    .bar.end {
-        align-self: flex-end;
-        transform-origin: left;
-        transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-    }
-    .open .bar.end {
-        transform: rotate(-450deg) translateX(-11px);
-    }
-    /* ======== loader ========== */
-    .menu_list .loader {
-        position: absolute;
-        left: 90%;
-        top: 20px;
-        width: 10px;
-        height: 50px;
-        border-radius: 50%;
-    }
-    /* ======== header ========== */
-    .header .menu_list ul li a {
-        border: none;
-    }
-    .social a {
-        font-size: 1.8em;
-    }
-    .section-title p {
-        font-size: 16px;
-    }
-    .section-title h2 {
-        font-size: large;
-    }
-    #abouts h2 {
-        font-size: large;
-    }
-    /* ======== technology ========== */
-    #technology i {
-        font-size: 3.5em;
-    }
-    #technology .php {
-        margin-left: 26px;
-    }
-    #technology .php img {
-        max-width: 80px;
-        width: auto;
-        height: 50px;
-    }
-    #technology .mysql {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-    }
-    #technology .mysql {
-        display: flex;
-        align-items: center;
-    }
-    #technology .mysql img {
-        max-width: 100px;
-        width: auto;
-        height: 80px;
-    }
-    #technology .aws {
-        margin-left: -25px;
-    }
-    #technology .aws img {
-        max-width: 70px;
-        width: auto;
-        height: 85px;
-    }
-    #technology .linux img {
-        max-width: 80px;
-        width: auto;
-        height: 60px;
-    }
-    #projet {
-        margin-top: 55%;
-    }
-    #projet h3 {
-        font-size: large;
-    }
-    #projet .card {
-        margin-bottom: 10%;
-    }
-    #projet .card h5 {
-        font-size: large;
-    }
-    #form {
-        padding: 60% 0px 200px 0;
-    }
-    #form h3 {
-        font-size: large;
-    }
+@media screen and (max-width: 767.98px) /* Mobile landscape */ {
+  /* ======== burger menu ========== */
+  .top-nav {
+    width: 100%;
+    height: 95vh;
+    position: fixed;
+    top: calc(-100vh + -30px);
+    left: 0px;
+    background-color: rgba(105, 86, 32, 0.3);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+    z-index: 1000;
+  }
+  .nav-list {
+    list-style: none;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7px;
+  }
+  li {
+    margin: 0 2rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+  }
+  .nav-link {
+    font-family: thehistoriademo, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+  }
+  .top-nav.open {
+    top: -25px;
+    border-radius: initial;
+  }
+  .menu-toggler {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+  }
+  .menu-toggler.open {
+    transform: rotate(-48deg);
+  }
+  .bar {
+    background: #000;
+    width: 49px;
+    height: 4px;
+    border-radius: 0.8rem;
+  }
+  .bar.half {
+    width: 24px;
+  }
+  .bar.start {
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+  .open .bar.start {
+    transform: rotate(-450deg) translateX(11px);
+  }
+  .bar.end {
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+  .open .bar.end {
+    transform: rotate(-450deg) translateX(-11px);
+  }
+  /* ======== loader ========== */
+  .menu_list .loader {
+    position: absolute;
+    left: 90%;
+    top: 20px;
+    width: 10px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  /* ======== header ========== */
+  .header .menu_list ul li a {
+    border: none;
+  }
+  .social a {
+    font-size: 1.8em;
+  }
+  .section-title p {
+    font-size: 16px;
+  }
+  .section-title h2 {
+    font-size: large;
+  }
+  #abouts h2 {
+    font-size: large;
+  }
+  /* ======== technology ========== */
+  #technology i {
+    font-size: 3.5em;
+  }
+  #technology .php {
+    margin-left: 26px;
+  }
+  #technology .php img {
+    max-width: 80px;
+    width: auto;
+    height: 50px;
+  }
+  #technology .mysql {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  #technology .mysql {
+    display: flex;
+    align-items: center;
+  }
+  #technology .mysql img {
+    max-width: 100px;
+    width: auto;
+    height: 80px;
+  }
+  #technology .aws {
+    margin-left: -25px;
+  }
+  #technology .aws img {
+    max-width: 70px;
+    width: auto;
+    height: 85px;
+  }
+  #technology .linux img {
+    max-width: 80px;
+    width: auto;
+    height: 60px;
+  }
+  #projet {
+    margin-top: 55%;
+  }
+  #projet h3 {
+    font-size: large;
+  }
+  #projet .card {
+    margin-bottom: 10%;
+  }
+  #projet .card h5 {
+    font-size: large;
+  }
+  #form {
+    padding: 60% 0px 200px 0;
+  }
+  #form h3 {
+    font-size: large;
+  }
 }
 
-@media screen and (max-width: 575.98px)
-/* Mobile */
-
-{
-    /* ======== Animated loader ========== */
-    .menu_list .loader {
-        position: absolute;
-        left: 88%;
-        top: 20px;
-        width: 12px;
-        height: 50px;
-        border-radius: 50%;
-    }
-    .header .menu_list ul li a {
-        border: none;
-    }
-    /* ======== Jumborton ========== */
-    .banner a {
-        padding: 10px 16px 10px 16px;
-        font-size: 16px;
-    }
-    .social a {
-        font-size: 1.8em;
-        padding: 1rem;
-    }
-    .header-text h1 {
-        font-size: 25px;
-        font-weight: 300;
-        line-height: 45px;
-    }
-    .header-text p {
-        font-size: 15px;
-    }
-    .section-title p {
-        font-size: 16px;
-    }
-    .section-title h2 {
-        font-size: large;
-    }
-    /* ======== About ========== */
-    #abouts h2 {
-        font-size: large;
-    }
-    /* ======== Technology ========== */
-    #technology i {
-        font-size: 3rem;
-        display: flex;
-        justify-content: center;
-    }
-    #technology .aws {
-        margin-top: 7px;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-left: 5px;
-    }
-    #technology .aws img {
-        max-width: 133px;
-        width: auto;
-        height: 55px;
-    }
-    #technology .mysql {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-    #technology .mysql img {
-        max-width: 80px;
-        width: auto;
-        height: 70px;
-    }
-    #technology .sass {
-        margin-left: 9%;
-    }
-    #technology .wordpress {
-        margin-left: -5%;
-    }
-    #technology .php {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin-left: 8px;
-    }
-    #technology .php img {
-        max-width: 65px;
-        width: auto;
-        height: 45px;
-    }
-    #technology .linux img {
-        max-width: 80px;
-        width: auto;
-        height: 50px;
-    }
-    #technology .laravel {
-        font-size: 1em;
-    }
-    /* ======== Projet ========== */
-    #projet {
-        margin: 100% 0 0 0;
-    }
-    #form {
-        margin: 200% 0 20% 0%;
-    }
+@media screen and (max-width: 575.98px) /* Mobile */ {
+  /* ======== Animated loader ========== */
+  .menu_list .loader {
+    position: absolute;
+    left: 88%;
+    top: 20px;
+    width: 12px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .header .menu_list ul li a {
+    border: none;
+  }
+  /* ======== Jumborton ========== */
+  .banner a {
+    padding: 10px 16px 10px 16px;
+    font-size: 16px;
+  }
+  .social a {
+    font-size: 1.8em;
+    padding: 1rem;
+  }
+  .header-text h1 {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 45px;
+  }
+  .header-text p {
+    font-size: 15px;
+  }
+  .section-title p {
+    font-size: 16px;
+  }
+  .section-title h2 {
+    font-size: large;
+  }
+  /* ======== About ========== */
+  #abouts h2 {
+    font-size: large;
+  }
+  /* ======== Technology ========== */
+  #technology i {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  #technology .aws {
+    margin-top: 7px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  #technology .aws img {
+    max-width: 133px;
+    width: auto;
+    height: 55px;
+  }
+  #technology .mysql {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #technology .mysql img {
+    max-width: 80px;
+    width: auto;
+    height: 70px;
+  }
+  #technology .sass {
+    margin-left: 9%;
+  }
+  #technology .wordpress {
+    margin-left: -5%;
+  }
+  #technology .php {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+  }
+  #technology .php img {
+    max-width: 65px;
+    width: auto;
+    height: 45px;
+  }
+  #technology .linux img {
+    max-width: 80px;
+    width: auto;
+    height: 50px;
+  }
+  #technology .laravel {
+    font-size: 1em;
+  }
+  /* ======== Projet ========== */
+  #projet {
+    margin: 100% 0 0 0;
+  }
+  #form {
+    margin: 200% 0 20% 0%;
+  }
 }
 
 @media screen and (max-width: 319.98px) {
-    .menu_list .loader {
-        position: absolute;
-        left: 85%;
-        top: 20px;
-        width: 12px;
-        height: 50px;
-        border-radius: 50%;
-    }
-    .header .menu_list ul li a {
-        border: none;
-    }
-    /* ======== Jumborton ======== */
-    .banner {
-        text-align: center;
-    }
-    .banner .header-text p {
-        font-size: 13px;
-    }
-    /* ======== About ======== */
-    /* #abouts .about-image {
+  .menu_list .loader {
+    position: absolute;
+    left: 85%;
+    top: 20px;
+    width: 12px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .header .menu_list ul li a {
+    border: none;
+  }
+  /* ======== Jumborton ======== */
+  .banner {
+    text-align: center;
+  }
+  .banner .header-text p {
+    font-size: 13px;
+  }
+  /* ======== About ======== */
+  /* #abouts .about-image {
         margin-left: 13%;
     } */
-    #abouts .about-line {
-        color: #fff;
-        width: calc(100% + 52px);
-    }
-    .section-title h2 {
-        font-size: large;
-    }
-    /* ======== Technology ======== */
-    #technology i {
-        font-size: 3rem;
-    }
-    #technology .aws {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: -2px;
-        margin-left: 10px;
-    }
-    #technology .aws img {
-        max-width: 100px;
-        width: auto;
-        height: 50px;
-    }
-    #technology .php {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    #technology .php img {
-        max-width: 60px;
-        width: auto;
-        height: 40px;
-    }
-    #technology .mysql {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-left: 10px;
-    }
-    #technology .mysql img {
-        max-width: 65px;
-        width: auto;
-        height: 110px;
-    }
-    /* ======== Projet ======== */
-    #projet h3 {
-        font-size: 20px;
-    }
+  #abouts .about-line {
+    color: #fff;
+    width: calc(100% + 52px);
+  }
+  .section-title h2 {
+    font-size: large;
+  }
+  /* ======== Technology ======== */
+  #technology i {
+    font-size: 3rem;
+  }
+  #technology .aws {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+    margin-left: 10px;
+  }
+  #technology .aws img {
+    max-width: 100px;
+    width: auto;
+    height: 50px;
+  }
+  #technology .php {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #technology .php img {
+    max-width: 60px;
+    width: auto;
+    height: 40px;
+  }
+  #technology .mysql {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  #technology .mysql img {
+    max-width: 65px;
+    width: auto;
+    height: 110px;
+  }
+  /* ======== Projet ======== */
+  #projet h3 {
+    font-size: 20px;
+  }
 }
